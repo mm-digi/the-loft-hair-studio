@@ -1,0 +1,7 @@
+{
+  "name": "the-loft-hair-studio",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs"
+  }
+}

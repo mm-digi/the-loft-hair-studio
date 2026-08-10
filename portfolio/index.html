@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | The Loft Hair Studio Bristol</title>
+  <meta name="description" content="The Loft Hair Studio, Bristol. Thoughtful cuts, dimensional colour and beautifully wearable hair.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    img { max-width: 100%; height: auto; }
+  </style>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap');
+body:has(#loft-portfolio){overflow-x:hidden}
+#loft-portfolio{--ink:#211916;--ink-soft:#4b3d37;--cream:#f3eadf;--cream-light:#fbf7f1;--clay:#b65f43;--rose:#d6a193;--line:rgba(33,25,22,.16);position:relative;left:calc((100% - 100vw)/2);width:100vw;max-width:none;margin:0;overflow:hidden;background:var(--cream-light);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.6}
+#loft-portfolio,#loft-portfolio *{box-sizing:border-box}#loft-portfolio img{display:block;width:100%;height:100%;object-fit:cover}#loft-portfolio a{color:inherit;text-decoration:none}#loft-portfolio h1,#loft-portfolio h2,#loft-portfolio h3,#loft-portfolio p,#loft-portfolio figure,#loft-portfolio blockquote{margin:0}#loft-portfolio button{font:inherit}#loft-portfolio svg{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.loft-grain{position:fixed;inset:0;z-index:9998;pointer-events:none;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E")}
+.loft-topbar{height:36px;background:var(--ink);color:var(--cream);display:flex;align-items:center;overflow:hidden}.loft-marquee{width:100%;overflow:hidden}.loft-marquee__track{display:flex;width:max-content;align-items:center;animation:loftMarquee 24s linear infinite}.loft-marquee__track span{font-size:10px;letter-spacing:.24em;white-space:nowrap;padding:0 24px}.loft-marquee__track i{width:4px;height:4px;background:var(--clay);border-radius:50%}
+.loft-header{position:absolute;top:36px;left:0;right:0;z-index:100;height:105px;padding:0 clamp(22px,5vw,78px);display:flex;align-items:center;justify-content:space-between;color:var(--cream-light);transition:.35s}.loft-header.is-sticky{position:fixed;top:0;height:82px;background:rgba(251,247,241,.94);color:var(--ink);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.loft-brand{display:flex;flex-direction:column;line-height:.8;align-items:center;min-width:110px}.loft-brand__small{font-size:8px;letter-spacing:.55em;margin-left:.55em}.loft-brand__main{font-family:"Italiana",serif;font-size:39px;letter-spacing:.03em}.loft-brand__sub{font-size:6px;letter-spacing:.27em;margin-top:8px}.loft-nav{display:flex;gap:clamp(20px,3vw,48px)}.loft-nav a{position:relative;font-size:11px;font-weight:500;letter-spacing:.18em;padding:9px 0}.loft-nav a:after{content:"";position:absolute;left:0;bottom:2px;width:100%;height:1px;background:currentColor;transform:scaleX(0);transition:.3s}.loft-nav a:hover:after,.loft-nav a.is-active:after{transform:scaleX(1)}.loft-header-book{display:flex;align-items:center;gap:18px;font-size:11px;letter-spacing:.18em}.loft-header-book svg{width:20px}.loft-menu-toggle{display:none;background:none;border:0;color:inherit;width:46px;height:46px;position:relative}.loft-menu-toggle span{position:absolute;left:10px;width:26px;height:1px;background:currentColor;transition:.3s}.loft-menu-toggle span:first-child{top:19px}.loft-menu-toggle span:last-child{top:27px}.loft-menu-toggle.is-open span:first-child{transform:rotate(45deg);top:23px}.loft-menu-toggle.is-open span:last-child{transform:rotate(-45deg);top:23px}.loft-mobile-menu{position:fixed;inset:0;background:var(--ink);color:var(--cream);z-index:90;display:grid;place-items:center;opacity:0;visibility:hidden;transition:.35s}.loft-mobile-menu.is-open{opacity:1;visibility:visible}.loft-mobile-menu nav{display:flex;flex-direction:column;text-align:center;gap:12px}.loft-mobile-menu nav>a{font-family:"Italiana",serif;font-size:clamp(40px,12vw,68px);line-height:1.1}.loft-mobile-menu .loft-mobile-book{font-family:"DM Sans",sans-serif;font-size:11px;letter-spacing:.2em;border:1px solid rgba(255,255,255,.35);padding:16px 22px;margin-top:25px}
+.portfolio-hero{display:grid;grid-template-columns:.9fr 1.1fr;min-height:950px;background:var(--clay);color:#fff}.portfolio-hero__copy{padding:210px 4vw 100px clamp(25px,7vw,115px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.loft-eyebrow,.loft-kicker{display:flex;align-items:center;gap:15px;font-size:10px;letter-spacing:.25em;font-weight:500}.loft-eyebrow span{width:42px;height:1px;background:currentColor}.portfolio-hero h1,.portfolio-intro h2,.portfolio-gallery-section h2,.portfolio-booking h2{font-family:"Italiana",serif;font-weight:400;line-height:.98;letter-spacing:-.035em}.portfolio-hero h1{font-size:clamp(68px,7.5vw,125px);margin:58px 0 35px}.portfolio-hero h1 em{color:var(--cream);font-weight:400}.portfolio-hero__copy>p:not(.loft-eyebrow){max-width:570px;color:rgba(255,255,255,.82);font-size:17px}.portfolio-hero__copy>a{margin-top:42px;border-bottom:1px solid rgba(255,255,255,.7);padding-bottom:8px;font-size:10px;letter-spacing:.18em}.portfolio-hero__copy>a span{margin-left:18px}.portfolio-hero__visual{position:relative;padding:130px 6vw 80px 2vw;display:flex;align-items:center}.portfolio-hero__main{width:80%;height:72%;min-height:650px;margin-left:auto;overflow:hidden;border-radius:280px 280px 0 0;box-shadow:0 35px 80px rgba(40,15,8,.28)}.portfolio-hero__small{position:absolute;left:0;bottom:9%;width:34%;height:35%;border:10px solid var(--clay);overflow:hidden}.portfolio-hero__stamp{position:absolute;right:2.5vw;bottom:6%;width:145px;height:145px;border-radius:50%;background:var(--cream);color:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.portfolio-hero__stamp small,.portfolio-hero__stamp span{font-size:7px;letter-spacing:.2em}.portfolio-hero__stamp strong{font-family:"Italiana",serif;font-size:46px;line-height:1;font-weight:400;color:var(--clay)}
+.portfolio-intro{display:grid;grid-template-columns:1.2fr .8fr;gap:100px;padding:145px clamp(24px,7vw,115px);background:var(--cream-light);color:var(--ink)}.portfolio-intro h2,.portfolio-gallery-section h2,.portfolio-booking h2{font-size:clamp(48px,5.4vw,85px)}.portfolio-intro h2 em,.portfolio-gallery-section h2 em{color:var(--clay);font-weight:400}.portfolio-intro .loft-kicker,.portfolio-gallery-section .loft-kicker,.portfolio-booking .loft-kicker{color:var(--clay);margin-bottom:28px}.portfolio-intro>div:last-child{align-self:end}.portfolio-intro>div:last-child p{color:var(--ink-soft);font-size:14px;margin-top:18px}
+.portfolio-feature-strip{display:grid;grid-template-columns:repeat(3,1fr);background:var(--ink);color:var(--cream);padding:0 clamp(24px,7vw,115px)}.portfolio-feature-strip article{position:relative;padding:70px 45px;border-left:1px solid rgba(255,255,255,.14)}.portfolio-feature-strip article:last-child{border-right:1px solid rgba(255,255,255,.14)}.portfolio-feature-strip span{font-size:9px;color:var(--rose)}.portfolio-feature-strip h3{font-family:"Italiana",serif;font-size:34px;font-weight:400;margin:20px 0 12px}.portfolio-feature-strip p{font-size:12px;color:rgba(255,255,255,.6)}
+.portfolio-gallery-section{padding:145px clamp(20px,4vw,70px);background:var(--cream);color:var(--ink)}.portfolio-gallery-section>header{display:flex;justify-content:space-between;align-items:flex-end;padding:0 clamp(4px,3vw,45px);margin-bottom:70px}.portfolio-gallery-section>header>p{color:var(--ink-soft);font-size:12px}.portfolio-grid{columns:4 290px;column-gap:18px}.portfolio-item{position:relative;width:100%;padding:0;border:0;background:none;display:block;margin:0 0 18px;break-inside:avoid;overflow:hidden;cursor:zoom-in;color:#fff}.portfolio-item.portrait{aspect-ratio:4/5}.portfolio-item.portrait-tall{aspect-ratio:3/4.6}.portfolio-item.square{aspect-ratio:1}.portfolio-item.landscape{aspect-ratio:1.22/1}.portfolio-item img{transition:transform .8s cubic-bezier(.16,1,.3,1)}.portfolio-item:hover img{transform:scale(1.045)}.portfolio-item__overlay{position:absolute;inset:0;padding:22px;display:grid;grid-template-columns:1fr auto;grid-template-rows:auto 1fr auto;background:linear-gradient(to bottom,rgba(20,10,7,.06),rgba(20,10,7,.05) 45%,rgba(20,10,7,.68));opacity:0;transition:.35s;text-align:left}.portfolio-item:hover .portfolio-item__overlay,.portfolio-item:focus .portfolio-item__overlay{opacity:1}.portfolio-item__overlay small{font-size:8px;letter-spacing:.17em}.portfolio-item__overlay strong{grid-column:1;grid-row:3;font-family:"Italiana",serif;font-size:22px;font-weight:400}.portfolio-item__overlay i{grid-column:2;grid-row:3;font-style:normal;font-size:8px;letter-spacing:.15em;align-self:end}
+.portfolio-quote{position:relative;padding:145px clamp(24px,12vw,210px);background:var(--cream-light);color:var(--ink);text-align:center;overflow:hidden}.portfolio-quote__mark{position:absolute;top:-120px;left:50%;transform:translateX(-50%);font-family:"Italiana",serif;font-size:500px;color:rgba(182,95,67,.07);line-height:1}.portfolio-quote blockquote{position:relative;font-family:"Italiana",serif;font-size:clamp(42px,5.5vw,82px);line-height:1.15}.portfolio-quote p{position:relative;margin-top:35px;font-size:9px;letter-spacing:.2em;color:var(--clay)}
+.portfolio-booking{display:grid;grid-template-columns:1fr .8fr;gap:90px;align-items:end;padding:130px clamp(24px,7vw,115px);background:var(--clay);color:#fff}.portfolio-booking h2{color:#fff}.portfolio-booking h2 em{color:var(--cream);font-weight:400}.portfolio-booking .loft-kicker{color:var(--cream)}.portfolio-booking>div:last-child p{color:rgba(255,255,255,.76);margin-bottom:30px}.portfolio-booking>div:last-child a{display:flex;justify-content:space-between;border:1px solid rgba(255,255,255,.45);padding:17px 19px;margin-top:12px;font-size:10px;letter-spacing:.16em;transition:.3s}.portfolio-booking>div:last-child a:hover{background:var(--cream);color:var(--ink)}
+.loft-footer{background:#17110f;color:var(--cream);padding:95px clamp(24px,6vw,95px) 28px}.loft-footer__top{display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:65px;border-bottom:1px solid rgba(255,255,255,.14)}.loft-footer__brand{display:flex;flex-direction:column;align-items:center;line-height:.85}.loft-footer__brand span{font-size:8px;letter-spacing:.55em;margin-left:.55em}.loft-footer__brand strong{font-family:"Italiana",serif;font-size:82px;font-weight:400}.loft-footer__brand small{font-size:8px;letter-spacing:.28em}.loft-footer__statement p{font-family:"Italiana",serif;font-size:clamp(35px,4vw,60px);line-height:1.05;text-align:right}.loft-footer__statement em{color:var(--rose)}.loft-footer__middle{display:grid;grid-template-columns:.65fr .65fr .65fr 1.4fr;gap:50px;padding:65px 0}.loft-footer__middle nav,.loft-footer__contact{display:flex;flex-direction:column;align-items:flex-start;gap:8px}.loft-footer__middle nav>span,.loft-footer__contact>span{font-size:8px;letter-spacing:.22em;color:var(--rose);margin-bottom:13px}.loft-footer__middle nav a{font-family:"Italiana",serif;font-size:20px}.loft-footer__contact{margin-left:auto}.loft-footer__contact p,.loft-footer__contact a{font-size:12px;color:rgba(255,255,255,.65)}.loft-footer__bottom{display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,.14);padding-top:25px;font-size:8px;letter-spacing:.14em;color:rgba(255,255,255,.52)}.loft-footer__bottom div{display:flex;gap:25px}
+.portfolio-lightbox{position:fixed;inset:0;z-index:10000;background:rgba(23,17,15,.96);display:flex;align-items:center;justify-content:center;padding:55px;opacity:0;visibility:hidden;transition:.3s}.portfolio-lightbox.is-open{opacity:1;visibility:visible}.portfolio-lightbox img{width:auto!important;height:auto!important;max-width:min(1200px,84vw);max-height:84vh;object-fit:contain!important}.portfolio-lightbox button{position:absolute;border:0;background:rgba(255,255,255,.08);color:#fff;width:52px;height:52px;border-radius:50%;cursor:pointer;font-size:24px}.portfolio-lightbox__close{top:22px;right:25px}.portfolio-lightbox__prev{left:25px;top:50%}.portfolio-lightbox__next{right:25px;top:50%}.portfolio-lightbox__count{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.65);font-size:9px;letter-spacing:.2em}
+/* Readability protection for light sections */
+#loft-portfolio .portfolio-intro,#loft-portfolio .portfolio-gallery-section,#loft-portfolio .portfolio-quote{color:var(--ink)!important}#loft-portfolio .portfolio-intro h1,#loft-portfolio .portfolio-intro h2,#loft-portfolio .portfolio-intro h3,#loft-portfolio .portfolio-intro p,#loft-portfolio .portfolio-gallery-section h1,#loft-portfolio .portfolio-gallery-section h2,#loft-portfolio .portfolio-gallery-section h3,#loft-portfolio .portfolio-gallery-section>header>p,#loft-portfolio .portfolio-quote blockquote,#loft-portfolio .portfolio-quote p{color:var(--ink)!important}#loft-portfolio .portfolio-intro>div:last-child p,#loft-portfolio .portfolio-gallery-section>header>p{color:var(--ink-soft)!important}#loft-portfolio .portfolio-intro .loft-kicker,#loft-portfolio .portfolio-gallery-section .loft-kicker,#loft-portfolio .portfolio-intro h2 em,#loft-portfolio .portfolio-gallery-section h2 em,#loft-portfolio .portfolio-quote p{color:var(--clay)!important}#loft-portfolio .loft-header.is-sticky,#loft-portfolio .loft-header.is-sticky a,#loft-portfolio .loft-header.is-sticky button{color:var(--ink)!important}
+@keyframes loftMarquee{to{transform:translateX(-50%)}}
+@media(max-width:1050px){.loft-nav,.loft-header-book{display:none}.loft-menu-toggle{display:block}.portfolio-hero{grid-template-columns:1fr}.portfolio-hero__copy{padding-bottom:70px}.portfolio-hero__visual{min-height:760px;padding-top:20px}.portfolio-intro,.portfolio-booking{grid-template-columns:1fr;gap:55px}.portfolio-feature-strip{grid-template-columns:1fr}.portfolio-feature-strip article{border-right:1px solid rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.14)}.loft-footer__middle{grid-template-columns:repeat(3,1fr)}.loft-footer__contact{grid-column:1/-1;margin-left:0}}
+@media(max-width:760px){.loft-header{height:84px;padding:0 20px}.loft-brand__main{font-size:32px}.portfolio-hero__copy{padding:165px 24px 75px}.portfolio-hero h1{font-size:clamp(58px,17vw,88px);margin-top:44px}.portfolio-hero__visual{min-height:620px;padding:20px 24px 65px}.portfolio-hero__main{width:88%;min-height:520px}.portfolio-hero__small{left:15px;width:38%;height:32%;border-width:7px}.portfolio-hero__stamp{right:17px;width:115px;height:115px}.portfolio-intro,.portfolio-booking{padding:95px 24px}.portfolio-feature-strip{padding:0 24px}.portfolio-feature-strip article{padding:52px 28px}.portfolio-gallery-section{padding:95px 16px}.portfolio-gallery-section>header{display:block;margin-bottom:45px}.portfolio-gallery-section>header>p{margin-top:20px}.portfolio-grid{columns:2 145px;column-gap:10px}.portfolio-item{margin-bottom:10px}.portfolio-item__overlay{display:none}.portfolio-quote{padding:105px 24px}.loft-footer{padding-top:75px}.loft-footer__top{display:block}.loft-footer__statement{margin-top:55px}.loft-footer__statement p{text-align:left}.loft-footer__middle{grid-template-columns:1fr 1fr}.loft-footer__contact{grid-column:1/-1}.loft-footer__bottom{flex-direction:column;gap:16px;text-align:center}.portfolio-lightbox{padding:20px}.portfolio-lightbox__prev{left:10px}.portfolio-lightbox__next{right:10px}.portfolio-lightbox button{width:44px;height:44px}}
+@media(max-width:480px){.portfolio-grid{columns:1}.portfolio-item.portrait,.portfolio-item.portrait-tall,.portfolio-item.square,.portfolio-item.landscape{aspect-ratio:4/5}.portfolio-intro h2,.portfolio-gallery-section h2,.portfolio-booking h2{font-size:48px}.loft-footer__middle{grid-template-columns:1fr}.loft-footer__brand strong{font-size:65px}}
+@media(prefers-reduced-motion:reduce){#loft-portfolio *,#loft-portfolio *:before,#loft-portfolio *:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div id="loft-portfolio">
+  <div class="loft-grain" aria-hidden="true"></div>
+  <div class="loft-topbar"><div class="loft-marquee"><div class="loft-marquee__track"><span>MODERN CUTTING</span><i></i><span>BESPOKE COLOUR</span><i></i><span>TEXTURED HAIR EXPERTISE</span><i></i><span>REMI CACHET EXTENSIONS</span><i></i><span>BRISTOL BS7</span><i></i><span>MODERN CUTTING</span><i></i><span>BESPOKE COLOUR</span><i></i><span>TEXTURED HAIR EXPERTISE</span><i></i><span>REMI CACHET EXTENSIONS</span><i></i><span>BRISTOL BS7</span><i></i></div></div></div>
+
+    <header class="loft-header" id="loftPortfolioHeader">
+    <a class="loft-brand" href="/" aria-label="The Loft Hair Studio home">
+      <span class="loft-brand__small">THE</span>
+      <span class="loft-brand__main">LOFT</span>
+      <span class="loft-brand__sub">HAIR STUDIO · BRISTOL</span>
+    </a>
+
+    <nav class="loft-nav" aria-label="Main navigation">
+      <a href="/about/">ABOUT</a>
+      <a href="/services/">SERVICES</a>
+      <a class="is-active" href="/portfolio/">PORTFOLIO</a>
+      <a href="/contact/">CONTACT</a>
+    </nav>
+
+    <a class="loft-header-book loft-magnetic" href="https://www.fresha.com/a/gareth-at-the-loft-hair-studio-bristol-merton-road-s43w0y8a" target="_blank" rel="noopener">
+      <span>BOOK NOW</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+    </a>
+
+    <button class="loft-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="loft-mobile-menu" aria-hidden="true">
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/services/">Services</a>
+      <a href="/portfolio/">Portfolio</a>
+      <a href="/contact/">Contact</a>
+      <a class="loft-mobile-book" href="https://www.fresha.com/a/gareth-at-the-loft-hair-studio-bristol-merton-road-s43w0y8a" target="_blank" rel="noopener">Book an appointment</a>
+    </nav>
+  </div>
+
+  <main>
+    <section class="portfolio-hero">
+      <div class="portfolio-hero__copy"><p class="loft-eyebrow"><span></span>OUR WORK</p><h1>Made in the chair.<br><em>Worn in real life.</em></h1><p>From soft, lived-in colour to precision cuts and beautifully finished texture, every result is created around the person wearing it.</p><a href="#portfolio-gallery">EXPLORE THE PORTFOLIO <span>↓</span></a></div>
+      <div class="portfolio-hero__visual"><div class="portfolio-hero__main"><img src="/images/39036815_515344875572781_2477378728796094464_n.jpg" alt="Hair colour and styling by The Loft Hair Studio" fetchpriority="high"></div><div class="portfolio-hero__small"><img src="/images/img-20260313-wa0017.jpg" alt="Recent work by The Loft Hair Studio"></div><div class="portfolio-hero__stamp"><small>THE LOFT</small><strong>48</strong><span>SELECTED LOOKS</span></div></div>
+    </section>
+
+    <section class="portfolio-intro"><div><p class="loft-kicker">BEAUTIFULLY PERSONAL</p><h2>Hair that looks polished.<br><em>Never overdone.</em></h2></div><div><p>Our portfolio brings together colour, cutting, texture, styling and transformations created at The Loft Hair Studio.</p><p>Every appointment begins with a considered consultation, so the final result complements your features, your hair and the way you actually live.</p></div></section>
+
+    <section class="portfolio-feature-strip">
+      <article><span>01</span><h3>Precision cutting</h3><p>Shape, movement and detail tailored around your natural texture.</p></article>
+      <article><span>02</span><h3>Bespoke colour</h3><p>Thoughtful tones and blends designed specifically for you.</p></article>
+      <article><span>03</span><h3>Wearable texture</h3><p>Finishes that feel effortless in the salon and beyond it.</p></article>
+    </section>
+
+    <section class="portfolio-gallery-section" id="portfolio-gallery"><header><div><p class="loft-kicker">THE PORTFOLIO</p><h2>A closer look<br><em>at our craft.</em></h2></div><p>Tap or click any image to view it in full.</p></header><div class="portfolio-grid"><button class="portfolio-item landscape" type="button" data-full="/images/39036815_515344875572781_2477378728796094464_n.jpg" aria-label="Open portfolio image 1">
+  <img src="/images/39036815_515344875572781_2477378728796094464_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>01</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item square" type="button" data-full="/images/img-20260313-wa0018.jpg" aria-label="Open portfolio image 2">
+  <img src="/images/img-20260313-wa0018.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>02</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/40158709_529329170841018_6371622376328658944_n.jpg" aria-label="Open portfolio image 3">
+  <img src="/images/40158709_529329170841018_6371622376328658944_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>03</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/40239981_529329134174355_4316834172799811584_n.jpg" aria-label="Open portfolio image 4">
+  <img src="/images/40239981_529329134174355_4316834172799811584_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>04</small><strong>LIVED-IN COLOUR</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item landscape" type="button" data-full="/images/40679174_532649267175675_6082384628482572288_n.jpg" aria-label="Open portfolio image 5">
+  <img src="/images/40679174_532649267175675_6082384628482572288_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>05</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item square" type="button" data-full="/images/img-20260313-wa0017.jpg" aria-label="Open portfolio image 6">
+  <img src="/images/img-20260313-wa0017.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>06</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/42196861_540432473064021_3619888128870842368_n.jpg" aria-label="Open portfolio image 7">
+  <img src="/images/42196861_540432473064021_3619888128870842368_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>07</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/44185911_552142325226369_1967698803775504384_n.jpg" aria-label="Open portfolio image 8">
+  <img src="/images/44185911_552142325226369_1967698803775504384_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>08</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item landscape" type="button" data-full="/images/44277360_552939805146621_8813769973726969856_n.jpg" aria-label="Open portfolio image 9">
+  <img src="/images/44277360_552939805146621_8813769973726969856_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>09</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item square" type="button" data-full="/images/img-20260313-wa0014.jpg" aria-label="Open portfolio image 10">
+  <img src="/images/img-20260313-wa0014.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>10</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/46147877_566367700470498_3757441135199387648_n.jpg" aria-label="Open portfolio image 11">
+  <img src="/images/46147877_566367700470498_3757441135199387648_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>11</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/48396233_586160138491254_1975363507922665472_n.jpg" aria-label="Open portfolio image 12">
+  <img src="/images/48396233_586160138491254_1975363507922665472_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>12</small><strong>LIVED-IN COLOUR</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item landscape" type="button" data-full="/images/52378347_615985648842036_4636408253910089728_n.jpg" aria-label="Open portfolio image 13">
+  <img src="/images/52378347_615985648842036_4636408253910089728_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>13</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item square" type="button" data-full="/images/img-20260313-wa0013.jpg" aria-label="Open portfolio image 14">
+  <img src="/images/img-20260313-wa0013.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>14</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/54434186_634143513692916_4936408567029694464_n.jpg" aria-label="Open portfolio image 15">
+  <img src="/images/54434186_634143513692916_4936408567029694464_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>15</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/54799651_638116876628913_4706616774332776448_n.jpg" aria-label="Open portfolio image 16">
+  <img src="/images/54799651_638116876628913_4706616774332776448_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>16</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item landscape" type="button" data-full="/images/55554486_634143537026247_5129132146262278144_n.jpg" aria-label="Open portfolio image 17">
+  <img src="/images/55554486_634143537026247_5129132146262278144_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>17</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item square" type="button" data-full="/images/img-20260313-wa0012.jpg" aria-label="Open portfolio image 18">
+  <img src="/images/img-20260313-wa0012.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>18</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/57000719_648434865597114_5805120716881788928_n.jpg" aria-label="Open portfolio image 19">
+  <img src="/images/57000719_648434865597114_5805120716881788928_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>19</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/59389337_657421978031736_4284989511445774336_n.jpg" aria-label="Open portfolio image 20">
+  <img src="/images/59389337_657421978031736_4284989511445774336_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>20</small><strong>LIVED-IN COLOUR</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item landscape" type="button" data-full="/images/59433612_655250718248862_2621755407365832704_n.jpg" aria-label="Open portfolio image 21">
+  <img src="/images/59433612_655250718248862_2621755407365832704_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>21</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item square" type="button" data-full="/images/img-20260313-wa0011.jpg" aria-label="Open portfolio image 22">
+  <img src="/images/img-20260313-wa0011.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>22</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/60032028_661720260935241_522734997807824896_n.jpg" aria-label="Open portfolio image 23">
+  <img src="/images/60032028_661720260935241_522734997807824896_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>23</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/60049813_661161684324432_2937491252297334784_n.jpg" aria-label="Open portfolio image 24">
+  <img src="/images/60049813_661161684324432_2937491252297334784_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>24</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item landscape" type="button" data-full="/images/60123195_661159577657976_2536288611897180160_n.jpg" aria-label="Open portfolio image 25">
+  <img src="/images/60123195_661159577657976_2536288611897180160_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>25</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item square" type="button" data-full="/images/img-20260313-wa0010.jpg" aria-label="Open portfolio image 26">
+  <img src="/images/img-20260313-wa0010.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>26</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/60352438_664609303979670_6220443341440417792_n.jpg" aria-label="Open portfolio image 27">
+  <img src="/images/60352438_664609303979670_6220443341440417792_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>27</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/62577983_683345555439378_3496303421340778496_n.jpg" aria-label="Open portfolio image 28">
+  <img src="/images/62577983_683345555439378_3496303421340778496_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>28</small><strong>LIVED-IN COLOUR</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item landscape" type="button" data-full="/images/64294962_683216245452309_204092538053722112_n.jpg" aria-label="Open portfolio image 29">
+  <img src="/images/64294962_683216245452309_204092538053722112_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>29</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item square" type="button" data-full="/images/20260402_182956.jpg" aria-label="Open portfolio image 30">
+  <img src="/images/20260402_182956.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>30</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/64925000_686003831840217_6644959764402929664_n.jpg" aria-label="Open portfolio image 31">
+  <img src="/images/64925000_686003831840217_6644959764402929664_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>31</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/64948495_690255574748376_3258681787299135488_n.jpg" aria-label="Open portfolio image 32">
+  <img src="/images/64948495_690255574748376_3258681787299135488_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>32</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item landscape" type="button" data-full="/images/65139628_690713168035950_8456127716276568064_n.jpg" aria-label="Open portfolio image 33">
+  <img src="/images/65139628_690713168035950_8456127716276568064_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>33</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item square" type="button" data-full="/images/20260402_182943.jpg" aria-label="Open portfolio image 34">
+  <img src="/images/20260402_182943.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>34</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/65645910_692811224492811_9181514999279910912_n.jpg" aria-label="Open portfolio image 35">
+  <img src="/images/65645910_692811224492811_9181514999279910912_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>35</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/65706160_692811107826156_4994098941411721216_n.jpg" aria-label="Open portfolio image 36">
+  <img src="/images/65706160_692811107826156_4994098941411721216_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>36</small><strong>LIVED-IN COLOUR</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item landscape" type="button" data-full="/images/65731870_692810904492843_95599185960632320_n.jpg" aria-label="Open portfolio image 37">
+  <img src="/images/65731870_692810904492843_95599185960632320_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>37</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item square" type="button" data-full="/images/20260402_182920.jpg" aria-label="Open portfolio image 38">
+  <img src="/images/20260402_182920.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>38</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/66083030_694924194281514_9131210100336230400_n.jpg" aria-label="Open portfolio image 39">
+  <img src="/images/66083030_694924194281514_9131210100336230400_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>39</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/66253636_698756237231643_4185010055843676160_n.jpg" aria-label="Open portfolio image 40">
+  <img src="/images/66253636_698756237231643_4185010055843676160_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>40</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item landscape" type="button" data-full="/images/66520528_700468783727055_6710946022736003072_n.jpg" aria-label="Open portfolio image 41">
+  <img src="/images/66520528_700468783727055_6710946022736003072_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>41</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item square" type="button" data-full="/images/20260327_150644.jpg" aria-label="Open portfolio image 42">
+  <img src="/images/20260327_150644.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>42</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/66625873_699316667175600_8248817813926445056_n.jpg" aria-label="Open portfolio image 43">
+  <img src="/images/66625873_699316667175600_8248817813926445056_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>43</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/67183668_700468747060392_3568781119014830080_n.jpg" aria-label="Open portfolio image 44">
+  <img src="/images/67183668_700468747060392_3568781119014830080_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>44</small><strong>LIVED-IN COLOUR</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item landscape" type="button" data-full="/images/67439983_703416656765601_2496842326580658176_n.jpg" aria-label="Open portfolio image 45">
+  <img src="/images/67439983_703416656765601_2496842326580658176_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>45</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item square" type="button" data-full="/images/20260327_150513.jpg" aria-label="Open portfolio image 46">
+  <img src="/images/20260327_150513.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>46</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/67498547_710650986042168_4323896503488741376_n.jpg" aria-label="Open portfolio image 47">
+  <img src="/images/67498547_710650986042168_4323896503488741376_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>47</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/67642738_715785058862094_6700078050375106560_n.jpg" aria-label="Open portfolio image 48">
+  <img src="/images/67642738_715785058862094_6700078050375106560_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>48</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
+</button></div></section>
+
+    <section class="portfolio-quote"><span class="portfolio-quote__mark">“</span><blockquote>Good hair should still feel like you — only brighter, fresher and more confident.</blockquote><p>THE LOFT HAIR STUDIO · BRISTOL</p></section>
+
+    <section class="portfolio-booking"><div><p class="loft-kicker">YOUR TURN</p><h2>Ready for something<br><em>beautifully you?</em></h2></div><div><p>Browse live availability and book online, or arrange a consultation if you would like help choosing the right service.</p><a href="https://www.fresha.com/a/gareth-at-the-loft-hair-studio-bristol-merton-road-s43w0y8a" target="_blank" rel="noopener">BOOK WITH FRESHA <span>↗</span></a><a href="/contact/">CONTACT THE STUDIO <span>↗</span></a></div></section>
+  </main>
+
+    <footer class="loft-footer">
+    <div class="loft-footer__top">
+      <div class="loft-footer__brand">
+        <span>THE</span>
+        <strong>LOFT</strong>
+        <small>HAIR STUDIO · BRISTOL</small>
+      </div>
+      <div class="loft-footer__statement">
+        <p>Modern hair.<br><em>Thoughtfully made.</em></p>
+      </div>
+    </div>
+
+    <div class="loft-footer__middle">
+      <nav>
+        <span>EXPLORE</span>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/services/">Services</a>
+        <a href="/portfolio/">Portfolio</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <nav>
+        <span>BOOK</span>
+        <a href="https://www.fresha.com/a/gareth-at-the-loft-hair-studio-bristol-merton-road-s43w0y8a" target="_blank" rel="noopener">Fresha ↗</a>
+        <a href="https://www.treatwell.co.uk/place/gareth-the-loft-hair-studio/" target="_blank" rel="noopener">Treatwell ↗</a>
+      </nav>
+      <nav class="loft-footer__social">
+        <span>FOLLOW</span>
+        <div class="loft-social-icons">
+          <a href="https://www.instagram.com/thelofthairstudiobristol/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Follow The Loft Hair Studio on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.5" cy="6.5" r="1"></circle>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/thelofthairstudiobristol" target="_blank" rel="noopener noreferrer" aria-label="Follow The Loft Hair Studio on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 8h3V4.5c-.8-.1-1.8-.2-3-.2-3 0-5 1.8-5 5.2V12H6v4h3v8h4v-8h3.3l.7-4H13V9.8c0-1.2.4-1.8 1-1.8Z"></path>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@thelofthairstudiobristol" target="_blank" rel="noopener noreferrer" aria-label="Follow The Loft Hair Studio on TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14.5 4c.7 2 2 3.2 4 3.7v3.4c-1.5-.1-2.8-.5-4-1.2v6.2c0 4-3.2 7-7.1 6.3A6.3 6.3 0 0 1 8 10v3.5a2.8 2.8 0 1 0 2.8 2.8V4h3.7Z"></path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+      <div class="loft-footer__newsletter">
+        <span>GOOD HAIR IN YOUR INBOX</span>
+        <p>Studio news, hair inspiration and appointment updates.</p>
+        <form onsubmit="event.preventDefault();">
+          <label class="screen-reader-text" for="loftEmail">Email address</label>
+          <input id="loftEmail" type="email" placeholder="Your email address">
+          <button type="submit" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="loft-footer__bottom">
+      <p>© 2026 THE LOFT HAIR STUDIO</p>
+      <div>
+        <a href="/privacy-policy/">PRIVACY</a>
+        <a href="/cookie-policy/">COOKIES</a>
+      </div>
+      <p>DESIGNED BY <a href="https://mm-digi.co.uk/" target="_blank" rel="noopener">MM DIGITAL</a></p>
+    </div>
+  </footer>
+
+  <div class="portfolio-lightbox" aria-hidden="true"><button class="portfolio-lightbox__close" type="button" aria-label="Close image">×</button><button class="portfolio-lightbox__prev" type="button" aria-label="Previous image">←</button><img src="" alt="Expanded portfolio image"><button class="portfolio-lightbox__next" type="button" aria-label="Next image">→</button><span class="portfolio-lightbox__count"></span></div>
+</div>
+<script>
+(function(){
+ const root=document.getElementById('loft-portfolio');if(!root)return;
+ const header=root.querySelector('#loftPortfolioHeader');const onScroll=()=>header.classList.toggle('is-sticky',window.scrollY>80);window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+ const toggle=root.querySelector('.loft-menu-toggle'),menu=root.querySelector('.loft-mobile-menu');const setMenu=open=>{toggle.classList.toggle('is-open',open);menu.classList.toggle('is-open',open);toggle.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-hidden',String(!open));document.documentElement.style.overflow=open?'hidden':''};toggle.addEventListener('click',()=>setMenu(!menu.classList.contains('is-open')));menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+ root.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=root.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
+ const items=[...root.querySelectorAll('.portfolio-item')],box=root.querySelector('.portfolio-lightbox'),boxImg=box.querySelector('img'),count=box.querySelector('.portfolio-lightbox__count');let current=0;
+ const show=i=>{current=(i+items.length)%items.length;boxImg.src=items[current].dataset.full;count.textContent=`${String(current+1).padStart(2,'0')} / ${String(items.length).padStart(2,'0')}`;box.classList.add('is-open');box.setAttribute('aria-hidden','false');document.documentElement.style.overflow='hidden'};
+ const close=()=>{box.classList.remove('is-open');box.setAttribute('aria-hidden','true');document.documentElement.style.overflow=''};
+ items.forEach((item,i)=>item.addEventListener('click',()=>show(i)));box.querySelector('.portfolio-lightbox__close').addEventListener('click',close);box.querySelector('.portfolio-lightbox__prev').addEventListener('click',()=>show(current-1));box.querySelector('.portfolio-lightbox__next').addEventListener('click',()=>show(current+1));box.addEventListener('click',e=>{if(e.target===box)close()});document.addEventListener('keydown',e=>{if(!box.classList.contains('is-open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(current-1);if(e.key==='ArrowRight')show(current+1)});
+ root.querySelectorAll('img').forEach(img=>img.addEventListener('error',()=>{img.style.opacity='0';if(img.parentElement)img.parentElement.style.background='linear-gradient(135deg,#b65f43,#211916)'}));
+})();
+</script>
+</body>
+</html>
