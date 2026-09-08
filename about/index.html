@@ -112,11 +112,17 @@ body:has(#loft-about){overflow-x:hidden}
 #loft-about .loft-header.is-sticky button{
   color:var(--ink)!important;
 }
+.about-intro{grid-template-columns:minmax(0,1.25fr) minmax(300px,.75fr)}
+.about-booking a.loft-btn--cream{color:var(--ink)!important}.about-booking a.loft-btn--cream .loft-btn__circle{color:#fff!important}
 @keyframes loftMarquee{to{transform:translateX(-50%)}}
 @media(max-width:1100px){.loft-nav,.loft-header-book{display:none}.loft-menu-toggle{display:block}.about-intro{grid-template-columns:45px 1fr}.about-intro__copy{grid-column:2;max-width:650px}.about-values__grid{grid-template-columns:repeat(2,1fr)}.about-value:nth-child(2){border-right:0}.about-value:nth-child(-n+2){border-bottom:1px solid var(--line)}.about-craft{grid-template-columns:1fr}.about-craft__images{min-height:750px}.about-experience{grid-template-columns:1fr}.about-experience__visual{height:650px}.about-booking__stamp{display:none}.loft-footer__middle{grid-template-columns:repeat(3,1fr)}.loft-footer__contact{grid-column:1/-1;margin-left:0}}
 @media(max-width:820px){.loft-cursor{display:none}.loft-header{height:84px;padding:0 20px}.loft-brand__main{font-size:32px}.about-hero{height:auto;min-height:0;display:flex;flex-direction:column}.about-hero__copy{padding:150px 24px 70px}.about-hero h1{font-size:clamp(64px,20vw,95px);margin:48px 0 32px}.about-hero h1 em{padding-left:18px}.about-hero__visual{height:620px;padding:0 24px 70px}.about-hero__image{max-height:none}.about-hero__card{left:8px;bottom:35px;width:118px;height:118px}.about-hero__line,.loft-scroll-cue{display:none}.about-intro{display:block;padding:100px 24px}.about-intro__number{margin-bottom:35px}.about-intro__copy{margin-top:45px}.about-editorial{min-height:760px;padding:70px 24px}.about-editorial__large{width:85%;height:520px}.about-editorial__small{left:24px;bottom:45px;width:44%;height:280px;border-width:7px}.about-editorial__quote{left:24px;top:65px;width:55%}.about-editorial__quote p{font-size:34px}.about-values,.about-gallery{padding:100px 24px}.about-values__head,.about-gallery>header{display:block}.about-values__head>p{margin-top:35px}.about-values__grid{grid-template-columns:1fr}.about-value{border-right:0;border-bottom:1px solid var(--line)!important}.about-value:last-child{border-bottom:0!important}.about-craft__copy,.about-experience__copy{padding:100px 24px}.about-craft__details{gap:20px;flex-wrap:wrap}.about-craft__images{min-height:620px;padding:60px 24px}.about-craft__image-main{width:84%;height:460px}.about-craft__image-small{left:24px;width:44%;height:260px}.about-experience__visual{height:520px}.about-gallery .loft-arrow-link{margin-bottom:35px}.about-gallery__grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:360px 270px 360px}.about-gallery__a{grid-column:1/-1;grid-row:1}.about-gallery__b{grid-column:1;grid-row:2}.about-gallery__d{grid-column:2;grid-row:2}.about-gallery__c{grid-column:1/-1;grid-row:3}.about-booking{min-height:620px}.about-booking__buttons{flex-direction:column}.loft-footer{padding-top:75px}.loft-footer__top{display:block}.loft-footer__statement{margin-top:55px}.loft-footer__statement p{text-align:left}.loft-footer__middle{grid-template-columns:1fr 1fr}.loft-footer__contact{grid-column:1/-1}.loft-footer__bottom{flex-direction:column;gap:16px;text-align:center}}
 @media(max-width:520px){.about-hero__visual{height:520px}.about-editorial{min-height:690px}.about-editorial__large{height:450px}.about-editorial__quote{width:68%}.about-editorial__quote p{font-size:29px}.about-craft__images{min-height:520px}.about-craft__image-main{height:390px}.about-craft__image-small{height:210px}.about-experience__visual{height:430px}.about-gallery__grid{display:flex;flex-direction:column}.about-gallery figure{height:390px}.loft-footer__middle{grid-template-columns:1fr}.loft-footer__brand strong{font-size:65px}}
 @media(prefers-reduced-motion:reduce){#loft-about *,#loft-about *:before,#loft-about *:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+#loft-about .loft-brand img{width:150px!important;height:90px!important;object-fit:contain!important;transition:filter .35s}
+#loft-about .loft-header.is-sticky .loft-brand img{filter:invert(1)}
+#loft-about .loft-footer__brand img{width:280px!important;height:auto!important;object-fit:contain!important}
+@media(max-width:760px){#loft-about .loft-brand img{width:135px!important;height:78px!important}#loft-about .loft-footer__brand img{width:240px!important}}
 </style>
 </head>
 <body>
@@ -127,17 +133,15 @@ body:has(#loft-about){overflow-x:hidden}
   <div class="loft-topbar">
     <div class="loft-marquee" aria-label="Salon highlights">
       <div class="loft-marquee__track">
-        <span>MODERN CUTTING</span><i></i><span>BESPOKE COLOUR</span><i></i><span>TEXTURED HAIR EXPERTISE</span><i></i><span>REMI CACHET EXTENSIONS</span><i></i><span>BRISTOL BS7</span><i></i>
-        <span>MODERN CUTTING</span><i></i><span>BESPOKE COLOUR</span><i></i><span>TEXTURED HAIR EXPERTISE</span><i></i><span>REMI CACHET EXTENSIONS</span><i></i><span>BRISTOL BS7</span><i></i>
+        <span>MODERN CUTTING</span><i></i><span>BESPOKE COLOUR</span><i></i><span>TEXTURED HAIR EXPERTISE</span><i></i><span>REMI CACHET EXTENSIONS</span><i></i><span>BISHOPSTON · BRISTOL</span><i></i>
+        <span>MODERN CUTTING</span><i></i><span>BESPOKE COLOUR</span><i></i><span>TEXTURED HAIR EXPERTISE</span><i></i><span>REMI CACHET EXTENSIONS</span><i></i><span>BISHOPSTON · BRISTOL</span><i></i>
       </div>
     </div>
   </div>
 
     <header class="loft-header" id="loftAboutHeader">
     <a class="loft-brand" href="/" aria-label="The Loft Hair Studio home">
-      <span class="loft-brand__small">THE</span>
-      <span class="loft-brand__main">LOFT</span>
-      <span class="loft-brand__sub">HAIR STUDIO · BRISTOL</span>
+      <img src="/images/the-loft-logo-light.png" alt="The Loft Hair Studio">
     </a>
 
     <nav class="loft-nav" aria-label="Main navigation">
@@ -181,7 +185,7 @@ body:has(#loft-about){overflow-x:hidden}
         <div class="about-hero__image loft-image-reveal">
           <img src="/images/image-1770821115310.jpg" alt="Inside The Loft Hair Studio in Bristol" fetchpriority="high">
         </div>
-        <div class="about-hero__card loft-reveal"><small>EST.</small><strong>BS7</strong><span>CALM SPACE<br>CREATIVE HAIR</span></div>
+        <div class="about-hero__card loft-reveal"><small>INDEPENDENT</small><strong>BRISTOL</strong><span>CALM SPACE<br>CREATIVE HAIR</span></div>
         <div class="about-hero__line">THOUGHTFUL · WARM · PERSONAL</div>
       </div>
 
@@ -189,7 +193,6 @@ body:has(#loft-about){overflow-x:hidden}
     </section>
 
     <section class="about-intro" id="our-story">
-      <div class="about-intro__number">01</div>
       <div class="about-intro__heading">
         <p class="loft-kicker loft-reveal">OUR STORY</p>
         <h2 class="loft-display loft-split">Created to make haircare feel <em>considered.</em></h2>
@@ -202,10 +205,10 @@ body:has(#loft-about){overflow-x:hidden}
 
     <section class="about-editorial">
       <div class="about-editorial__large loft-image-reveal">
-        <img src="/images/file_00000000f6b8720a86b6095f9ea3ac9f.jpg" alt="Considered details at The Loft Hair Studio" loading="lazy">
+        <img src="/images/20260211_142805.jpg" alt="Professional haircare products at The Loft Hair Studio" loading="lazy">
       </div>
       <div class="about-editorial__small loft-image-reveal loft-parallax">
-        <img src="/images/20260402_182920.jpg" alt="The welcoming salon interior" loading="lazy">
+        <img src="/images/20260211_135130.jpg" alt="The welcoming salon seating area" loading="lazy">
       </div>
       <div class="about-editorial__quote loft-reveal">
         <span>“</span>
@@ -272,15 +275,14 @@ body:has(#loft-about){overflow-x:hidden}
         <a class="loft-arrow-link loft-reveal" href="/portfolio/">VIEW OUR WORK <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
       </header>
       <div class="about-gallery__grid">
-        <figure class="about-gallery__a loft-image-reveal"><img src="/images/20260402_182943.jpg" alt="Dimensional colour created at The Loft" loading="lazy"><figcaption>COLOUR WITH DEPTH</figcaption></figure>
+        <figure class="about-gallery__a loft-image-reveal"><img src="/images/20260207_124917.jpg" alt="Vibrant creative colour created at The Loft" loading="lazy"><figcaption>COLOUR WITH DEPTH</figcaption></figure>
         <figure class="about-gallery__b loft-image-reveal"><img src="/images/20260327_150506.jpg" alt="Modern haircut at The Loft" loading="lazy"><figcaption>MODERN SHAPE</figcaption></figure>
-        <figure class="about-gallery__c loft-image-reveal"><img src="/images/20260227_163044.jpg" alt="Glossy healthy hair finish" loading="lazy"><figcaption>HEALTHY FINISH</figcaption></figure>
+        <figure class="about-gallery__c loft-image-reveal"><img src="/images/20260128_142700.jpg" alt="Glossy layered hair finish" loading="lazy"><figcaption>HEALTHY FINISH</figcaption></figure>
         <figure class="about-gallery__d loft-image-reveal"><img src="/images/20260320_150605.jpg" alt="Textured hair styling in Bristol" loading="lazy"><figcaption>TEXTURE, UNDERSTOOD</figcaption></figure>
       </div>
     </section>
 
     <section class="about-booking">
-      <div class="about-booking__stamp"><img src="/images/Scissors.png" alt="" aria-hidden="true"></div>
       <div class="about-booking__copy loft-reveal">
         <p class="loft-kicker">READY WHEN YOU ARE</p>
         <h2>Come as you are.<br><em>Leave feeling more you.</em></h2>
@@ -296,9 +298,7 @@ body:has(#loft-about){overflow-x:hidden}
     <footer class="loft-footer">
     <div class="loft-footer__top">
       <div class="loft-footer__brand">
-        <span>THE</span>
-        <strong>LOFT</strong>
-        <small>HAIR STUDIO · BRISTOL</small>
+        <img src="/images/the-loft-logo-light.png" alt="The Loft Hair Studio">
       </div>
       <div class="loft-footer__statement">
         <p>Modern hair.<br><em>Thoughtfully made.</em></p>
@@ -341,15 +341,11 @@ body:has(#loft-about){overflow-x:hidden}
           </a>
         </div>
       </nav>
-      <div class="loft-footer__newsletter">
-        <span>GOOD HAIR IN YOUR INBOX</span>
-        <p>Studio news, hair inspiration and appointment updates.</p>
-        <form onsubmit="event.preventDefault();">
-          <label class="screen-reader-text" for="loftEmail">Email address</label>
-          <input id="loftEmail" type="email" placeholder="Your email address">
-          <button type="submit" aria-label="Subscribe">→</button>
-        </form>
-      </div>
+      <nav>
+        <span>CONTACT</span>
+        <a href="mailto:garethlove85@googlemail.com">Email Gareth ↗</a>
+        <a href="tel:+447964603412">07964 603412</a>
+      </nav>
     </div>
 
     <div class="loft-footer__bottom">
