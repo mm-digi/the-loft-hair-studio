@@ -38,9 +38,10 @@ body:has(#loft-contact){overflow-x:hidden}
 @keyframes loftMarquee{to{transform:translateX(-50%)}}
 @media(max-width:1050px){.loft-nav,.loft-header-book{display:none}.loft-menu-toggle{display:block}.contact-intro,.contact-booking{grid-template-columns:1fr}.contact-intro>p,.contact-booking__copy{max-width:650px}.contact-cards{grid-template-columns:1fr 1fr}.contact-card:nth-child(3){grid-column:1/-1;border-left:1px solid var(--line);border-top:0}.contact-map-section,.contact-hours{grid-template-columns:1fr}.contact-map-wrap,.contact-map-wrap iframe{min-height:540px}.contact-hours__image{height:620px;min-height:0}.loft-footer__middle{grid-template-columns:repeat(3,1fr)}.loft-footer__contact{grid-column:1/-1;margin-left:0}}
 @media(max-width:760px){.loft-header{height:84px;padding:0 20px}.loft-brand__main{font-size:32px}.contact-hero{grid-template-columns:1fr;min-height:0}.contact-hero__copy{padding:155px 24px 80px}.contact-hero h1{font-size:clamp(62px,19vw,92px);margin:45px 0 52px}.contact-hero__actions{flex-direction:column;align-items:flex-start}.contact-hero__image{min-height:560px}.contact-intro,.contact-booking{padding:95px 24px;gap:42px}.contact-cards{grid-template-columns:1fr;padding:0 24px 95px}.contact-card,.contact-card:nth-child(3){border:1px solid var(--line);border-top:0}.contact-card:first-child{border-top:1px solid var(--line)}.contact-card{min-height:330px}.contact-map-copy,.contact-hours__copy{padding:95px 24px}.contact-map-wrap,.contact-map-wrap iframe{min-height:450px}.contact-hours__image{height:500px}.loft-footer{padding-top:75px}.loft-footer__top{display:block}.loft-footer__statement{margin-top:55px}.loft-footer__statement p{text-align:left}.loft-footer__middle{grid-template-columns:1fr 1fr}.loft-footer__contact{grid-column:1/-1}.loft-footer__bottom{flex-direction:column;gap:16px;text-align:center}}
-@media(max-width:500px){.contact-hero__image{min-height:460px}.contact-hero__badge{width:170px;padding:22px}.contact-hero__badge strong{font-size:50px}.contact-intro h2,.contact-map-copy h2,.contact-hours__copy h2,.contact-booking h2{font-size:48px}.loft-footer__middle{grid-template-columns:1fr}.loft-footer__brand strong{font-size:65px}}
+@media(max-width:500px){.contact-hero__image{min-height:460px}.contact-hero__badge{width:170px;padding:22px;overflow:hidden}.contact-hero__badge strong{font-size:26px;letter-spacing:-.02em}.contact-intro h2,.contact-map-copy h2,.contact-hours__copy h2,.contact-booking h2{font-size:48px}.loft-footer__middle{grid-template-columns:1fr}.loft-footer__brand strong{font-size:65px}}
 @media(max-width:760px){.contact-hero h1{font-size:clamp(42px,12vw,64px);margin-bottom:48px}}
 .contact-hero__badge strong{font-size:30px}
+@media(max-width:500px){.contact-hero__badge strong{font-size:26px;letter-spacing:-.02em}}
 @media(prefers-reduced-motion:reduce){#loft-contact *,#loft-contact *:before,#loft-contact *:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 #loft-contact .loft-brand img{width:150px!important;height:90px!important;object-fit:contain!important;transition:filter .35s}
 #loft-contact .loft-header.is-sticky .loft-brand img{filter:invert(1)}
@@ -101,7 +102,7 @@ body:has(#loft-contact){overflow-x:hidden}
         <h1><span>We can’t wait</span><em>to meet you.</em></h1>
         <p class="contact-hero__intro">Visit The Loft Hair Studio for thoughtful haircare in a calm, warm and beautifully considered space.</p>
         <div class="contact-hero__actions">
-          <a class="loft-btn loft-btn--light" href="https://www.fresha.com/a/gareth-at-the-loft-hair-studio-bristol-merton-road-s43w0y8a" target="_blank" rel="noopener">BOOK ONLINE <span>↗</span></a>
+          <a class="loft-btn loft-btn--light" href="https://www.fresha.com/a/gareth-at-the-loft-hair-studio-bristol-merton-road-s43w0y8a" target="_blank" rel="noopener">BOOK ONLINE <span>↗︎</span></a>
           <a class="loft-text-link" href="#contact-details">CONTACT THE STUDIO</a>
         </div>
       </div>
@@ -125,7 +126,7 @@ body:has(#loft-contact){overflow-x:hidden}
         <small>VISIT</small>
         <h3>The Loft Hair Studio</h3>
         <p>Unit 22, 22 Merton Road<br>Bishopston, Bristol<br>BS7 8TL</p>
-        <a href="https://maps.google.com/?q=Unit+22+22+Merton+Road+Bristol+BS7+8TL" target="_blank" rel="noopener">GET DIRECTIONS ↗</a>
+        <a href="https://maps.google.com/?q=Unit+22+22+Merton+Road+Bristol+BS7+8TL" target="_blank" rel="noopener">GET DIRECTIONS ↗︎</a>
       </article>
 
       <article class="contact-card contact-card--dark">
@@ -133,7 +134,7 @@ body:has(#loft-contact){overflow-x:hidden}
         <small>CALL</small>
         <h3>Let’s talk hair.</h3>
         <p>Call the studio for help choosing a service or arranging your consultation.</p>
-        <a href="tel:+447964603412">07964 603412 ↗</a>
+        <a href="tel:+447964603412">07964 603412 ↗︎</a>
       </article>
 
       <article class="contact-card">
@@ -141,7 +142,7 @@ body:has(#loft-contact){overflow-x:hidden}
         <small>EMAIL</small>
         <h3>Send a message.</h3>
         <p>For general enquiries, colour questions or appointment guidance.</p>
-        <a class="contact-card__email" href="mailto:garethlove85@googlemail.com">garethlove85@googlemail.com ↗</a>
+        <a class="contact-card__email" href="mailto:garethlove85@googlemail.com">garethlove85@googlemail.com ↗︎</a>
       </article>
     </section>
 
@@ -191,8 +192,8 @@ body:has(#loft-contact){overflow-x:hidden}
       <div class="contact-booking__copy">
         <p>Choose your service and view live availability online. New colour, extension and perm clients are encouraged to book a consultation first.</p>
         <div class="contact-booking__buttons">
-          <a href="https://www.fresha.com/a/gareth-at-the-loft-hair-studio-bristol-merton-road-s43w0y8a" target="_blank" rel="noopener">BOOK WITH FRESHA <span>↗</span></a>
-          <a href="https://www.treatwell.co.uk/place/gareth-the-loft-hair-studio/" target="_blank" rel="noopener">BOOK WITH TREATWELL <span>↗</span></a>
+          <a href="https://www.fresha.com/a/gareth-at-the-loft-hair-studio-bristol-merton-road-s43w0y8a" target="_blank" rel="noopener">BOOK WITH FRESHA <span>↗︎</span></a>
+          <a href="https://www.treatwell.co.uk/place/gareth-the-loft-hair-studio/" target="_blank" rel="noopener">BOOK WITH TREATWELL <span>↗︎</span></a>
         </div>
       </div>
     </section>
@@ -219,8 +220,8 @@ body:has(#loft-contact){overflow-x:hidden}
       </nav>
       <nav>
         <span>BOOK</span>
-        <a href="https://www.fresha.com/a/gareth-at-the-loft-hair-studio-bristol-merton-road-s43w0y8a" target="_blank" rel="noopener">Fresha ↗</a>
-        <a href="https://www.treatwell.co.uk/place/gareth-the-loft-hair-studio/" target="_blank" rel="noopener">Treatwell ↗</a>
+        <a href="https://www.fresha.com/a/gareth-at-the-loft-hair-studio-bristol-merton-road-s43w0y8a" target="_blank" rel="noopener">Fresha ↗︎</a>
+        <a href="https://www.treatwell.co.uk/place/gareth-the-loft-hair-studio/" target="_blank" rel="noopener">Treatwell ↗︎</a>
       </nav>
       <nav class="loft-footer__social">
         <span>FOLLOW</span>
@@ -246,7 +247,7 @@ body:has(#loft-contact){overflow-x:hidden}
       </nav>
       <nav>
         <span>CONTACT</span>
-        <a href="mailto:garethlove85@googlemail.com">Email Gareth ↗</a>
+        <a href="mailto:garethlove85@googlemail.com">Email Gareth ↗︎</a>
         <a href="tel:+447964603412">07964 603412</a>
       </nav>
     </div>
