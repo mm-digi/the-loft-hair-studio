@@ -7,7 +7,7 @@
   <meta name="description" content="The Loft Hair Studio, Bristol. Thoughtful cuts, dimensional colour and beautifully wearable hair.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
   <style>
     html, body { margin: 0; padding: 0; }
     img { max-width: 100%; height: auto; }
@@ -330,12 +330,18 @@ body:has(#loft-services-page){overflow-x:hidden}#loft-services-page{--ink:#21191
 }
 #loft-services-page .featured-grid strong,
 #loft-services-page .service-row strong{
-  font-family:"Italiana",serif!important;
-  font-weight:400!important;
+  font-family:"Cormorant Garamond",Georgia,serif!important;
+  font-weight:500!important;
   font-style:italic!important;
-  font-size:22px!important;
-  letter-spacing:0!important;
+  font-size:25px!important;
+  line-height:1.05!important;
+  letter-spacing:.005em!important;
   color:var(--ink)!important;
+  white-space:nowrap;
+}
+@media(max-width:540px){
+  #loft-services-page .featured-grid strong,
+  #loft-services-page .service-row strong{font-size:26px!important}
 }
 #loft-services-page .expect-section .loft-section-title{
   font-size:clamp(34px,3.4vw,48px);
