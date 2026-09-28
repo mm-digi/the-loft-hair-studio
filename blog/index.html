@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
+<script>
+(function(){
+  var opens=new Date('2026-10-02T00:00:00+01:00');
+  if(new Date()>=opens)return;
+  document.documentElement.classList.add('blog-scheduled');
+  var path=location.pathname;
+  if(path==='/blog'||path.indexOf('/blog/')===0){
+    var meta=document.createElement('meta');
+    meta.name='robots';
+    meta.content='noindex';
+    document.head.appendChild(meta);
+    location.replace('/');
+  }
+})();
+</script>
+<style>html.blog-scheduled a[href="/blog/"],html.blog-scheduled a[href^="/blog/"],html.blog-scheduled li:has(>a[href="/blog/"]){display:none!important}</style>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Journal | The Loft Hair Studio Bristol</title>
@@ -222,14 +239,14 @@ body:has(#loft-blog){overflow-x:hidden}
         <div class="about-hero__image loft-image-reveal">
           <img src="/images/20260211_140018.jpg" alt="Inside The Loft Hair Studio in Bristol" fetchpriority="high">
         </div>
-        <div class="about-hero__card loft-reveal"><small>JOURNAL</small><strong>SEPT</strong><span>2ND<br>2026</span></div>
+        <div class="about-hero__card loft-reveal"><small>JOURNAL</small><strong>OCT</strong><span>2ND<br>2026</span></div>
       </div>
     </section>
     <section class="blog-list">
       <a class="blog-card" href="/blog/your-autumn-hair-refresh-colours-and-styles-to-try-this-season/">
         <div class="blog-card__image"><img src="/images/20260402_182943.jpg" alt="Copper pixie cut at The Loft Hair Studio in Bristol"></div>
         <div>
-          <p class="blog-card__date">2 SEPTEMBER 2026</p>
+          <p class="blog-card__date">2 OCTOBER 2026</p>
           <h2>Your autumn<br><em>hair refresh.</em></h2>
           <p>Warm coppers, chestnuts and caramels, plus the cuts and treatments we are loving at The Loft this season.</p>
           <span class="blog-card__link">READ THE NOTE <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>

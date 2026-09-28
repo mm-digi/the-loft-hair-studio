@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
+<script>
+(function(){
+  var opens=new Date('2026-10-02T00:00:00+01:00');
+  if(new Date()>=opens)return;
+  document.documentElement.classList.add('blog-scheduled');
+  var path=location.pathname;
+  if(path==='/blog'||path.indexOf('/blog/')===0){
+    var meta=document.createElement('meta');
+    meta.name='robots';
+    meta.content='noindex';
+    document.head.appendChild(meta);
+    location.replace('/');
+  }
+})();
+</script>
+<style>html.blog-scheduled a[href="/blog/"],html.blog-scheduled a[href^="/blog/"],html.blog-scheduled li:has(>a[href="/blog/"]){display:none!important}</style>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Your Autumn Hair Refresh: Colours and Styles to Try This Season | The Loft Hair Studio</title>
@@ -221,7 +238,7 @@ body:has(#loft-post){overflow-x:hidden}
 
   <main>
     <article class="blog-article">
-      <p class="blog-article__date">2 SEPTEMBER 2026</p>
+      <p class="blog-article__date">2 OCTOBER 2026</p>
       <h1>Your autumn<br><em>hair refresh.</em></h1>
       <div class="blog-article__hero">
         <img src="/images/20260402_182943.jpg" alt="Copper pixie cut at The Loft Hair Studio in Bristol">
