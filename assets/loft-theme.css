@@ -293,3 +293,43 @@ html body :is(#loft-about,#loft-blog,#loft-post) .about-booking a.loft-btn--crea
   html body #loft-about .about-values:before{width:70vw;top:-21vw;right:0}
   html body :is(#loft-about,#loft-blog,#loft-post) .about-booking{min-height:640px;padding-top:80px;background-size:auto 100%}
 }
+
+/* ---------- Readability: small labels and eyebrows (WCAG AA contrast) ---------- */
+/* Brand burnt orange stays for large headings and fills; tiny text uses a deeper shade on light
+   backgrounds and white on teal, green and orange panels. The :not(#_) bumps specificity past the
+   pages own #root .section .label rules. */
+
+html body :is(#loft-home,#loft-about,#loft-services-page,#loft-portfolio,#loft-contact,#loft-blog,#loft-post){
+  --clay-text:#9a4a2c;
+  --rose-light:#efd9c8;
+
+  /* Small orange text on light backgrounds */
+  :is(.loft-kicker,.loft-eyebrow,.loft-header-book,.loft-stars,
+      .contact-card small,.contact-card>span,.contact-map-copy li span,
+      .service-category__heading p,.service-category__heading>span,
+      .featured-grid article>span,.loft-story__stamp,.about-value>span,.about-experience__list span,.perm-details__process li>span,.portfolio-quote>p,
+      .loft-visit__address span,.loft-review__stars,.loft-review__google,
+      .portfolio-hero__stamp small,.portfolio-hero__stamp span,.contact-hero__badge small,.contact-hero__badge span):not(#_){color:var(--clay-text)!important}
+  .loft-feature>span{color:var(--teal-deep)}
+  :is(.loft-vertical-copy,.about-hero__line){color:var(--ink-soft)}
+
+  /* Labels and body copy on teal / green panels */
+  :is(.loft-services,.services-specialisms,.perm-details__consult,.contact-card--dark,.loft-contact-card,.portfolio-feature-strip,.about-editorial__quote)
+    :is(.loft-kicker,small,span):not(.loft-btn *):not(.loft-btn__circle):not(#_),
+  :is(.loft-contact-card>p,.perm-details__consult>span):not(#_){color:#fff!important}
+  :is(.loft-services,.services-specialisms,.perm-details__consult,.contact-card--dark,.loft-contact-card,.portfolio-feature-strip) p:not(#_){color:rgba(255,255,255,.94)!important}
+  :is(.loft-services .loft-section-title em,.services-specialisms .loft-section-title em,.about-editorial__quote em):not(#_){color:var(--rose-light)!important}
+
+  /* Burnt-orange panels and buttons: pure white for small text */
+  :is(.loft-booking,.portfolio-booking,.contact-booking) :is(.loft-kicker,p,.loft-booking__note a):not(.loft-book-option *):not(#_),
+  .loft-book-option:not(:hover) :is(small,i,strong):not(#_),
+  :is(.loft-contact-card__button,.services-booking .loft-btn--dark,.services-booking .loft-btn--dark span):not(#_){color:#fff!important}
+  .loft-booking__note a{border-color:rgba(255,255,255,.8)}
+
+  /* Footer on leafy green */
+  .loft-footer__statement em:not(#_){color:var(--rose-light)!important}
+  :is(.loft-footer__middle nav span,.loft-footer__newsletter>span,.loft-footer__newsletter p,.loft-footer__bottom,.loft-footer__bottom a):not(#_){color:#fff!important}
+  .loft-footer__middle nav a:hover:not(#_){color:var(--rose-light)!important}
+
+  .loft-topbar{color:#fff}
+}
