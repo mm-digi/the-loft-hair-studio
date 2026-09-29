@@ -1,0 +1,295 @@
+/*
+ * The Loft — warm studio theme
+ * Brings the site in line with the refreshed salon: warm-white base, earthy
+ * neutrals, and pops of burnt orange, teal and leafy green (brand kit V3).
+ *
+ * Loaded after each page's inline styles. Every rule is scoped under
+ * `html body :is(<page roots>)` so it outranks the page's own `#root .x`
+ * selectors without needing to touch them.
+ */
+
+html body :is(#loft-home,#loft-about,#loft-services-page,#loft-portfolio,#loft-contact,#loft-blog,#loft-post){
+  /* Brand kit palette */
+  --ink:#2f2926;          /* warm charcoal (text) */
+  --ink-soft:#5f524a;
+  --cream:#f3ece6;        /* brand warm white */
+  --cream-light:#faf6f1;
+  --sand:#ede3d5;         /* deeper cream for alternating sections */
+  --clay:#b75a34;         /* brand burnt orange */
+  --clay-dark:#96462a;
+  --rose:#d9b79c;         /* brand blush */
+  --caramel:#c7885a;
+  --sage:#6e7d66;         /* brand sage, deepened for text */
+  --teal:#5e8d95;         /* brand teal */
+  --teal-deep:#3f6b73;    /* teal for light-on-colour sections */
+  --leaf:#56704c;         /* leafy green from the studio plants */
+  --line:rgba(47,41,38,.14);
+
+  background:var(--cream-light);
+
+  /* ---------- Shared chrome ---------- */
+
+  ::selection{background:var(--clay);color:var(--cream-light)}
+  .loft-grain{opacity:.03}
+
+  .loft-topbar{background:var(--teal-deep);color:var(--cream-light)}
+  .loft-marquee__track i{background:var(--rose)}
+
+  .loft-header{color:var(--ink)}
+  .loft-header.is-sticky{background:rgba(250,246,241,.94)}
+  .loft-header .loft-brand img,
+  .loft-header.is-sticky .loft-brand img{filter:none!important}
+  .loft-header-book{color:var(--clay)}
+
+  .loft-mobile-menu{background:var(--teal-deep);color:var(--cream-light)}
+  .loft-mobile-menu .loft-mobile-book{border-color:rgba(255,255,255,.5)}
+
+  .loft-btn--dark{background:var(--teal-deep);color:var(--cream-light)}
+  .loft-btn--dark .loft-btn__circle{background:var(--clay);color:#fff}
+  .loft-btn--dark:hover{background:var(--ink);color:var(--cream-light)}
+  .loft-btn--outline .loft-btn__circle{background:var(--teal-deep);color:var(--cream-light)}
+  .loft-btn--outline:hover{background:var(--teal-deep);border-color:var(--teal-deep);color:var(--cream-light)}
+
+  .loft-image-reveal:after{background:var(--sand)}
+  .loft-cursor.is-hover{background:rgba(183,90,52,.14)}
+
+  /* Photo captions: warm brown fade instead of near-black */
+  .loft-ribbon__item figcaption,
+  .about-gallery figcaption{background:linear-gradient(transparent,rgba(58,40,30,.72))}
+
+  /* ---------- Heroes: warm white instead of solid terracotta ---------- */
+
+  :is(.loft-hero,.about-hero,.services-hero,.portfolio-hero,.contact-hero){
+    background:var(--cream);
+    color:var(--ink)!important;
+  }
+  :is(.loft-hero,.about-hero,.services-hero,.portfolio-hero,.contact-hero) h1{color:var(--ink)!important}
+  :is(.loft-hero__title,.about-hero h1,.services-hero h1,.portfolio-hero h1,.contact-hero h1) em{color:var(--clay)!important}
+  :is(.loft-hero,.about-hero,.services-hero,.portfolio-hero,.contact-hero) .loft-eyebrow{color:var(--clay)!important}
+  :is(.loft-hero__intro,.about-hero__intro,.services-hero__intro,.portfolio-hero__copy>p,.contact-hero__intro){color:var(--ink-soft)!important}
+  :is(.loft-hero,.about-hero,.services-hero,.portfolio-hero,.contact-hero) .loft-text-link,
+  :is(.loft-hero,.about-hero,.services-hero,.portfolio-hero,.contact-hero) .loft-arrow-link{color:var(--ink)!important;border-color:var(--ink)}
+  :is(.loft-hero,.about-hero,.services-hero,.portfolio-hero,.contact-hero) .loft-btn--dark{background:var(--clay);color:#fff}
+  :is(.loft-hero,.about-hero,.services-hero,.portfolio-hero,.contact-hero) .loft-btn--dark .loft-btn__circle{background:var(--teal-deep)}
+  :is(.loft-hero,.about-hero,.services-hero,.portfolio-hero,.contact-hero) .loft-btn--dark:hover{background:var(--clay-dark)}
+  .contact-hero .loft-btn--light{background:var(--clay);color:#fff!important}
+  .contact-hero .loft-btn--light .loft-btn__circle{background:var(--teal-deep);color:#fff}
+
+  /* Home hero details */
+  .loft-hero:before{background:linear-gradient(115deg,transparent 0 48%,rgba(183,90,52,.55) 48.1% 48.25%,transparent 48.4%)}
+  .loft-hero__orb{border-color:var(--clay);opacity:.22}
+  .loft-stars{color:var(--clay)}
+  .loft-rating small,.loft-hero__trust p{color:var(--ink-soft)}
+  .loft-trust-divider{background:var(--line)}
+  .loft-vertical-copy,.about-hero__line{color:rgba(47,41,38,.5)}
+  .loft-scroll-cue{color:var(--ink-soft)}
+  .loft-scroll-cue i{background:var(--line)}
+  .loft-scroll-cue i:after{background:var(--clay)}
+  .loft-hero__arch{box-shadow:0 30px 80px rgba(92,58,36,.22)}
+  .loft-hero__image-shade{background:linear-gradient(to bottom,rgba(60,35,20,0),rgba(60,35,20,.12))}
+  .loft-floating-card{background:rgba(255,251,246,.96)}
+
+
+  /* About hero */
+  .about-hero__image{box-shadow:0 30px 80px rgba(92,58,36,.22)}
+
+  /* Services / contact heroes: full-bleed photo on the right */
+  .services-hero__visual:after{background:var(--sand)!important}
+  :is(.services-hero__copy,.contact-hero__copy,.portfolio-hero__copy){position:relative}
+  :is(.services-hero__copy,.contact-hero__copy,.portfolio-hero__copy):before{
+    content:"";position:absolute;pointer-events:none;z-index:0;
+    right:3%;bottom:0;width:min(250px,30%);aspect-ratio:3/4;
+    background:url("/images/plant-bird-of-paradise.webp") right bottom/contain no-repeat;
+    filter:drop-shadow(0 10px 12px rgba(60,40,25,.18));
+  }
+  .contact-hero__copy:before{background-image:url("/images/plant-palm.webp");width:min(270px,32%)}
+  .portfolio-hero__copy:before{
+    top:95px;bottom:auto;right:6%;width:min(230px,30%);aspect-ratio:1;
+    background:url("/images/plant-trailing-vine.webp") right top/contain no-repeat;filter:none;
+  }
+  :is(.services-hero__copy,.contact-hero__copy,.portfolio-hero__copy)>*{position:relative;z-index:1}
+
+  /* Portfolio hero */
+  .portfolio-hero__small{border-color:var(--cream)}
+  .portfolio-hero__main{box-shadow:0 30px 80px rgba(92,58,36,.22)}
+
+  /* ---------- Former charcoal sections ---------- */
+
+  /* Image backdrops → soft sand */
+  :is(.loft-story__visual,.about-editorial,.about-craft__images,.contact-map-wrap){background:var(--sand)}
+  :is(.loft-story__image-small,.about-editorial__small,.about-craft__image-small){border-color:var(--sand)}
+  .loft-story__stamp{border-color:rgba(183,90,52,.45);color:var(--clay)}
+  .about-editorial:after{background:var(--teal-deep)}
+  .about-editorial__quote{text-shadow:none}
+  .about-editorial__quote span{color:var(--rose)}
+
+  /* Text-on-colour sections → brand teal */
+  :is(.loft-services,.services-specialisms,.perm-details__consult,.contact-card--dark,.loft-contact-card){background:var(--teal-deep)}
+  .loft-services .loft-section-title em,
+  .services-specialisms .loft-section-title em{color:var(--rose)}
+  .loft-section-head__copy,
+  .loft-service-row>p{color:rgba(255,255,255,.82)}
+  .loft-service-row__number,
+  .loft-service-row__title small{color:rgba(255,255,255,.7)}
+  .loft-service-row:hover{color:var(--rose)}
+  .loft-service-row__image{box-shadow:0 22px 50px rgba(20,40,45,.35)}
+  .loft-services .loft-btn--cream .loft-btn__circle{background:var(--clay)}
+  .perm-details__consult p,
+  .contact-card--dark p{color:rgba(255,255,255,.84)!important}
+  .loft-contact-card>a small{color:rgba(255,255,255,.72)}
+  .loft-contact-card__button{background:var(--clay)}
+  .specialism-list span{color:var(--rose)}
+
+  /* Leafy green: portfolio strip */
+  .portfolio-feature-strip{background:var(--leaf)}
+  .portfolio-feature-strip p{color:rgba(255,255,255,.84)!important}
+
+  /* Perm feature + Wella: calm sand sections with dark type */
+  :is(.perm-feature,.wella-section){background:var(--sand);color:var(--ink)!important}
+  :is(.perm-feature,.wella-section) :is(h2,.perm-lead){color:var(--ink)!important}
+  :is(.perm-feature,.wella-section) .loft-section-title em{color:var(--clay)!important}
+  :is(.perm-feature,.wella-section) .loft-kicker{color:var(--clay)!important}
+  .perm-feature__copy>p:not(.loft-kicker):not(.perm-lead),
+  .wella-section__copy>p:not(.loft-kicker),
+  .perm-note p{color:var(--ink-soft)!important}
+  .perm-note{border-color:var(--line)}
+  .perm-note strong{color:var(--teal-deep)}
+  .perm-feature__stamp{background:var(--cream-light)}
+
+  .services-specialisms .loft-kicker,
+  .perm-details__consult .loft-kicker{color:var(--rose)!important}
+
+  /* Burnt-orange sections stay as the brand pop, with clearer body copy */
+  :is(.loft-booking,.about-booking,.services-booking,.portfolio-booking,.contact-booking){background:var(--clay)}
+  :is(.loft-type-marquee,.about-marquee){background:var(--clay)}
+  .loft-booking__copy>p:not(.loft-kicker):not(.loft-booking__note),
+  .about-booking__copy>p:not(.loft-kicker),
+  .services-booking p:not(.loft-kicker),
+  .portfolio-booking>div:last-child p,
+  .contact-booking__copy>p{color:rgba(255,255,255,.9)!important}
+  .loft-booking__note{color:rgba(255,255,255,.85)}
+  .services-booking .loft-btn--dark{background:var(--teal-deep)}
+  .services-booking .loft-btn--dark .loft-btn__circle{background:var(--cream);color:var(--ink)}
+
+  /* Light sections: a touch warmer */
+  .loft-review{background:linear-gradient(rgba(243,236,230,.9),rgba(243,236,230,.9)),url("/images/bg-monstera-light.jpg") right center/cover no-repeat}
+  .loft-review:before{color:rgba(183,90,52,.08)}
+  .loft-visit__perks{color:var(--leaf)}
+  .loft-feature>span{color:var(--teal)}
+  .service-nav a:hover{background:var(--teal-deep);border-color:var(--teal-deep);color:var(--cream-light)!important}
+  .service-row--consult{background:rgba(94,141,149,.08)}
+
+  /* ---------- Footer: leafy green with trailing plants ---------- */
+
+  .loft-footer{position:relative;overflow:visible;background:var(--leaf);color:var(--cream-light)}
+  .loft-footer__statement em,
+  .loft-footer__middle nav span,
+  .loft-footer__newsletter>span{color:var(--rose)}
+  .loft-footer__middle nav a:hover{color:var(--rose)}
+  .loft-footer__newsletter p{color:rgba(255,255,255,.78)}
+  .loft-footer__newsletter input::placeholder{color:rgba(255,255,255,.6)}
+  .loft-footer__bottom{color:rgba(255,255,255,.72)}
+  .loft-footer__top,.loft-footer__bottom{border-color:rgba(255,255,255,.2)}
+  .loft-social-icons a{border-color:rgba(255,255,255,.35)}
+  .loft-social-icons a:hover{background:var(--clay);border-color:var(--clay)}
+}
+
+@media (max-width:760px){
+  html body :is(#loft-home,#loft-about,#loft-services-page,#loft-portfolio,#loft-contact,#loft-blog,#loft-post){
+    :is(.services-hero__copy,.contact-hero__copy,.portfolio-hero__copy):before{display:none}
+  }
+}
+
+/* Home: a potted plant standing on the footer edge, in front of the visit section */
+html body #loft-home .loft-visit{padding-bottom:240px}
+html body #loft-home .loft-footer:before{
+  content:"";position:absolute;right:clamp(16px,6vw,96px);top:-200px;width:200px;height:200px;pointer-events:none;
+  background:url("/images/plant-potted-calathea.webp") center bottom/contain no-repeat;
+  filter:drop-shadow(0 10px 10px rgba(30,40,25,.2));
+}
+@media (max-width:760px){
+  html body #loft-home .loft-visit{padding-bottom:190px}
+  html body #loft-home .loft-footer:before{width:150px;height:150px;top:-150px}
+}
+
+/* Services price list: package contents under the service name */
+html body #loft-services-page .service-row>span:first-child small{display:block;margin-top:4px;font-size:11px;letter-spacing:.02em}
+
+/* Services + contact heroes run their photo to the top edge; keep the nav readable over it */
+html body :is(#loft-services-page,#loft-contact) .loft-header:not(.is-sticky){
+  background:rgba(243,236,230,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);
+}
+
+/* About editorial quote: on phones the panel spans the photo, so fade it out instead */
+@media (max-width:760px){
+  html body :is(#loft-about,#loft-blog,#loft-post) .about-editorial:after{
+    background:linear-gradient(180deg,var(--teal-deep) 0%,rgba(63,107,115,.82) 60%,rgba(63,107,115,0) 100%);
+  }
+}
+
+/* ---------- More plants, each page its own ---------- */
+
+/* Home intro: pothos trailing down from the top corner */
+html body #loft-home .loft-intro{position:relative}
+html body #loft-home .loft-intro:before{
+  content:"";position:absolute;right:clamp(16px,5vw,90px);top:-6px;width:270px;height:390px;pointer-events:none;
+  background:url("/images/plant-hanging-pothos.webp") center top/contain no-repeat;
+}
+html body #loft-home .loft-intro__aside{position:relative;z-index:1}
+
+/* About values: a leafy garland draped across the top */
+html body #loft-about .about-values{position:relative}
+html body #loft-about .about-values:before{
+  /* the garland sits ~35% down its square canvas, so pull the box up to hang it from the top edge */
+  content:"";position:absolute;right:clamp(16px,6vw,110px);top:calc(min(480px,45vw) * -.3);width:min(480px,45vw);aspect-ratio:1;pointer-events:none;
+  background:url("/images/plant-garland.webp") center/contain no-repeat;
+}
+
+/* ---------- Studio backgrounds ---------- */
+
+/* Home gallery strip on reclaimed wood, like the salon floor and shelves */
+html body #loft-home .loft-ribbon{
+  background:linear-gradient(rgba(243,236,230,.18),rgba(243,236,230,.18)),url("/images/bg-wood.jpg") center/cover;
+}
+html body #loft-home .loft-ribbon__hint{color:var(--ink)}
+html body #loft-home .loft-ribbon__item{box-shadow:0 18px 40px rgba(60,35,20,.28)}
+
+/* Services CTA: monstera and stone scene */
+html body #loft-services-page .services-booking{
+  background:linear-gradient(rgba(243,232,218,.55),rgba(243,232,218,.55)),url("/images/bg-monstera-stone.jpg") center bottom/cover no-repeat;
+  color:var(--ink)!important;
+}
+html body #loft-services-page .services-booking h2{color:var(--ink)!important}
+html body #loft-services-page .services-booking .loft-section-title em,
+html body #loft-services-page .services-booking .loft-kicker{color:var(--clay)!important}
+html body #loft-services-page .services-booking p:not(.loft-kicker){color:var(--ink-soft)!important}
+html body #loft-services-page .services-booking .loft-btn--outline{border-color:var(--ink);color:var(--ink)}
+html body #loft-services-page .services-booking .loft-btn--outline .loft-btn__circle{background:var(--teal-deep);color:#fff}
+html body #loft-services-page .services-booking .loft-btn--outline:hover{background:var(--ink);color:var(--cream-light)}
+html body #loft-services-page .services-booking .loft-btn--dark{background:var(--clay)}
+html body #loft-services-page .services-booking .loft-btn--dark .loft-btn__circle{background:var(--teal-deep);color:#fff}
+
+/* About + blog CTA: wood slice on a soft wall, warmed up */
+html body :is(#loft-about,#loft-blog,#loft-post) .about-booking{
+  background:linear-gradient(rgba(240,226,208,.45),rgba(240,226,208,.45)),url("/images/bg-wood-slice.jpg") center bottom/cover no-repeat;
+  color:var(--ink);
+  /* copy sits on the wall; the wood slice becomes a podium beneath it */
+  min-height:880px;align-content:start;place-items:start center;padding-top:64px;
+}
+html body :is(#loft-about,#loft-blog,#loft-post) .about-booking:before,
+html body :is(#loft-about,#loft-blog,#loft-post) .about-booking:after{border-color:rgba(183,90,52,.2)}
+html body :is(#loft-about,#loft-blog,#loft-post) .about-booking__stamp{border-color:rgba(183,90,52,.45);color:var(--clay)}
+html body :is(#loft-about,#loft-blog,#loft-post) .about-booking h2{color:var(--ink)!important}
+html body :is(#loft-about,#loft-blog,#loft-post) .about-booking h2 em,
+html body :is(#loft-about,#loft-blog,#loft-post) .about-booking .loft-kicker{color:var(--clay)!important}
+html body :is(#loft-about,#loft-blog,#loft-post) .about-booking__copy>p:not(.loft-kicker){color:var(--ink-soft)!important}
+html body :is(#loft-about,#loft-blog,#loft-post) .about-booking .loft-text-link{color:var(--ink)!important}
+html body :is(#loft-about,#loft-blog,#loft-post) .about-booking a.loft-btn--cream{background:var(--clay)!important;color:#fff!important}
+html body :is(#loft-about,#loft-blog,#loft-post) .about-booking a.loft-btn--cream span{color:#fff!important}
+html body :is(#loft-about,#loft-blog,#loft-post) .about-booking a.loft-btn--cream .loft-btn__circle{background:var(--teal-deep)!important}
+
+@media (max-width:760px){
+  html body #loft-home .loft-intro:before{width:130px;height:190px;right:10px}
+  html body #loft-about .about-values:before{width:70vw;top:-21vw;right:0}
+  html body :is(#loft-about,#loft-blog,#loft-post) .about-booking{min-height:640px;padding-top:80px;background-size:auto 100%}
+}
