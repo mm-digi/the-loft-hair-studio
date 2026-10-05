@@ -417,3 +417,45 @@ html body :is(#loft-home,#loft-about,#loft-services-page,#loft-portfolio,#loft-c
 
 /* About editorial: the small corner photo is gone, so the section fits the main image and quote */
 html body #loft-about .about-editorial{min-height:0}
+
+/* Portfolio + Contact booking: the monstera and stone scene used on Services, instead of solid orange */
+html body :is(#loft-portfolio,#loft-contact) :is(.portfolio-booking,.contact-booking){
+  background:linear-gradient(rgba(243,232,218,.6),rgba(243,232,218,.6)),url("/images/bg-monstera-stone.jpg") center bottom/cover no-repeat;
+  color:var(--ink);
+}
+html body :is(#loft-portfolio,#loft-contact) :is(.portfolio-booking,.contact-booking) h2{color:var(--ink)!important}
+html body :is(#loft-portfolio,#loft-contact) :is(.portfolio-booking,.contact-booking) h2 em{color:var(--clay)!important}
+html body :is(#loft-portfolio,#loft-contact) :is(.portfolio-booking,.contact-booking) .loft-kicker:not(#_):not(#__){color:var(--clay-text,#9a4a2c)!important}
+html body :is(#loft-portfolio,#loft-contact) :is(.portfolio-booking>div:last-child p,.contact-booking__copy>p):not(#_):not(#__){color:var(--ink-soft)!important}
+/* Buttons: first solid burnt orange, second outlined, matching the homepage booking */
+html body :is(#loft-portfolio,#loft-contact) :is(.portfolio-booking>div:last-child a,.contact-booking__buttons a){
+  border-color:rgba(47,41,38,.35);color:var(--ink);background:rgba(250,246,241,.55);
+}
+html body :is(#loft-portfolio,#loft-contact) :is(.portfolio-booking>div:last-child a:first-of-type,.contact-booking__buttons a:first-child){
+  background:var(--clay);border-color:var(--clay);color:#fff;
+}
+html body :is(#loft-portfolio,#loft-contact) :is(.portfolio-booking>div:last-child a,.contact-booking__buttons a):hover{
+  background:var(--ink);border-color:var(--ink);color:var(--cream-light);
+}
+
+/* Footer social icons: Services, Portfolio and Contact were missing the round icon buttons the other pages have */
+html body :is(#loft-services-page,#loft-portfolio,#loft-contact) .loft-social-icons{display:flex;gap:12px}
+html body :is(#loft-services-page,#loft-portfolio,#loft-contact) .loft-social-icons a{width:46px;height:46px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.35);border-radius:50%;transition:background-color .3s,border-color .3s}
+html body :is(#loft-services-page,#loft-portfolio,#loft-contact) .loft-social-icons svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.6}
+html body :is(#loft-services-page,#loft-portfolio,#loft-contact) .loft-social-icons a:nth-child(2) svg,
+html body :is(#loft-services-page,#loft-portfolio,#loft-contact) .loft-social-icons a:nth-child(3) svg{fill:currentColor;stroke:none}
+
+/* Contact booking: keep the label and heading clear of the dark monstera leaf on the left */
+html body #loft-contact .contact-booking{
+  background:linear-gradient(90deg,rgba(243,232,218,.9) 0%,rgba(243,232,218,.78) 45%,rgba(243,232,218,.5) 100%),url("/images/bg-monstera-stone.jpg") center bottom/cover no-repeat;
+}
+
+/* Page heroes: Playfair sits lower on the line than Italiana did, so give the title room above the intro */
+html body :is(#loft-about,#loft-portfolio,#loft-contact) :is(.about-hero,.portfolio-hero,.contact-hero) h1{margin-bottom:34px}
+html body #loft-portfolio .portfolio-quote p{margin-top:32px!important}
+html body #loft-portfolio .portfolio-booking{
+  background:linear-gradient(90deg,rgba(243,232,218,.9) 0%,rgba(243,232,218,.78) 45%,rgba(243,232,218,.5) 100%),url("/images/bg-monstera-stone.jpg") center bottom/cover no-repeat;
+}
+
+/* Services booking: the arrow sits in a cream circle, so it must not inherit the button's white text */
+html body #loft-services-page .services-booking .loft-btn--dark .loft-btn__circle:not(#_):not(#__){background:var(--cream-light)!important;color:var(--clay)!important}
