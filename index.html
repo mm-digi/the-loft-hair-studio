@@ -221,7 +221,7 @@ body:has(#loft-home) {
 .loft-story__stamp span{font-size:7px;letter-spacing:.25em}
 .loft-story__stamp strong{font-family:"Italiana",serif;font-size:38px;font-weight:400;line-height:1}
 .loft-story__copy{padding:140px clamp(28px,7vw,115px) 120px clamp(35px,6vw,95px);display:flex;flex-direction:column;align-items:flex-start}
-.loft-story__copy .loft-kicker,.loft-section-head .loft-kicker,.loft-work__head .loft-kicker,.loft-booking .loft-kicker,.loft-visit .loft-kicker{color:var(--clay);margin-bottom:30px}
+.loft-story__copy .loft-kicker,.loft-work__head .loft-kicker,.loft-booking .loft-kicker,.loft-visit .loft-kicker{color:var(--clay);margin-bottom:30px}
 .loft-section-title{font-family:"Italiana",serif;font-size:clamp(48px,5.2vw,82px);font-weight:400;line-height:1.02;letter-spacing:-.03em}
 .loft-story__lead{font-family:"Italiana",serif;font-size:26px;line-height:1.35;margin-top:42px!important;margin-bottom:22px!important}
 .loft-story__copy>p:not(.loft-kicker):not(.loft-story__lead){font-size:14px;color:var(--ink-soft);max-width:560px}
@@ -232,21 +232,6 @@ body:has(#loft-home) {
 .loft-feature h3{font-family:"Italiana",serif;font-size:22px;font-weight:400;margin-bottom:4px}
 .loft-feature p{font-size:12px;color:var(--ink-soft)}
 
-.loft-services{background:var(--ink);color:var(--cream);padding:140px clamp(24px,7vw,115px)}
-.loft-section-head{display:flex;justify-content:space-between;gap:70px;align-items:flex-end;margin-bottom:85px}
-.loft-services .loft-section-title em{color:var(--rose)}
-.loft-section-head__copy{max-width:370px;color:rgba(255,255,255,.6);font-size:14px;padding-bottom:10px}
-.loft-service-list{border-top:1px solid rgba(255,255,255,.18)}
-.loft-service-row{position:relative;display:grid;grid-template-columns:70px minmax(260px,1fr) minmax(260px,.9fr) 60px;align-items:center;gap:25px;padding:30px 0;border-bottom:1px solid rgba(255,255,255,.18);transition:padding .35s,color .35s}
-.loft-service-row:hover{padding-left:18px;color:var(--rose)}
-.loft-service-row__number{font-size:9px;color:rgba(255,255,255,.45)}
-.loft-service-row__title small{font-size:8px;letter-spacing:.2em;color:rgba(255,255,255,.45)}
-.loft-service-row__title h3{font-family:"Italiana",serif;font-size:clamp(34px,4vw,58px);font-weight:400;line-height:1.1}
-.loft-service-row>p{font-size:12px;color:rgba(255,255,255,.57);max-width:380px}
-.loft-service-row__arrow{font-size:25px;text-align:right}
-.loft-service-row__image{position:absolute;right:8%;top:50%;width:230px;height:285px;z-index:3;opacity:0;pointer-events:none;transform:translateY(-40%) rotate(4deg) scale(.85);transition:.35s cubic-bezier(.16,1,.3,1);box-shadow:0 22px 50px rgba(0,0,0,.4)}
-.loft-service-row:hover .loft-service-row__image{opacity:1;transform:translateY(-50%) rotate(-3deg) scale(1)}
-.loft-services__cta{display:flex;justify-content:flex-end;margin-top:55px}
 
 .loft-type-marquee{overflow:hidden;background:var(--clay);color:var(--cream);padding:17px 0}
 .loft-type-marquee>div{display:flex;width:max-content;align-items:center;animation:loftMarquee 28s linear infinite}
@@ -433,14 +418,7 @@ body:has(#loft-home) {
   .loft-story__image-main{width:88%;height:72%}.loft-story__image-small{left:24px;bottom:45px;width:45%;height:34%;border-width:7px}
   .loft-story__stamp{right:22px;bottom:35px;width:120px;height:120px}
   .loft-story__copy{padding:90px 24px}
-  .loft-section-head,.loft-work__head,.loft-visit__top{display:block}
-  .loft-section-head__copy{margin-top:35px}
-  .loft-services{padding:100px 24px}
-  .loft-service-row{grid-template-columns:38px 1fr 35px;gap:14px}
-  .loft-service-row>p{grid-column:2 / 4;margin-top:-10px}
-  .loft-service-row__arrow{grid-column:3;grid-row:1}
-  .loft-service-row__image{display:none}
-  .loft-services__cta{justify-content:flex-start}
+  .loft-work__head,.loft-visit__top{display:block}
   .loft-work{padding:100px 24px}
   .loft-work__head .loft-arrow-link{margin-top:30px}
   .loft-mosaic{display:flex;overflow-x:auto;gap:15px;scroll-snap-type:x mandatory}
@@ -461,7 +439,6 @@ body:has(#loft-home) {
   .loft-display{font-size:43px}.loft-section-title{font-size:47px}
   .loft-story__visual{min-height:540px}.loft-story__image-main{width:92%;height:68%}
   .loft-story__stamp{width:100px;height:100px}.loft-story__stamp strong{font-size:28px}
-  .loft-service-row__title h3{font-size:34px}
   .loft-review blockquote{font-size:40px}
   .loft-booking__image{height:430px}
   .loft-book-option strong{font-size:23px}
@@ -510,7 +487,6 @@ body:has(#loft-home) {
 
 /* Reassert pale text only where the background is genuinely dark. */
 #loft-home .loft-hero,
-#loft-home .loft-services,
 #loft-home .loft-booking,
 #loft-home .loft-contact-card,
 #loft-home .loft-footer,
@@ -518,21 +494,14 @@ body:has(#loft-home) {
 
 #loft-home .loft-hero h1,
 #loft-home .loft-hero h1 em,
-#loft-home .loft-services h2,
-#loft-home .loft-services h3,
 #loft-home .loft-booking h2,
 #loft-home .loft-booking h2 em,
 #loft-home .loft-contact-card h3,
 #loft-home .loft-footer h2,
 #loft-home .loft-footer h3{color:var(--cream-light)!important}
 
-#loft-home .loft-services .loft-kicker,
 #loft-home .loft-booking .loft-kicker{color:var(--rose)!important}
 
-#loft-home .loft-service-row__title small,
-#loft-home .loft-service-row__number{color:rgba(255,255,255,.64)!important}
-#loft-home .loft-service-row>p,
-#loft-home .loft-section-head__copy{color:rgba(255,255,255,.76)!important}
 #loft-home .loft-booking__copy>p:not(.loft-kicker),
 #loft-home .loft-booking__note{color:rgba(255,255,255,.82)!important}
 
@@ -552,6 +521,45 @@ body:has(#loft-home) {
 #loft-home .loft-book-option:hover{color:var(--ink)!important}
 #loft-home .loft-btn--outline{color:var(--ink)!important}
 #loft-home .loft-btn--outline:hover{color:var(--cream-light)!important}
+
+/* SERVICES MENU CARD */
+#loft-home .loft-menu-section{position:relative;display:flex;justify-content:center;padding:150px 24px;overflow:hidden;background:var(--teal-deep,#3f6b73)}
+.loft-menu{position:relative;z-index:2;width:min(780px,100%)}
+.loft-menu__card{background:var(--cream-light);color:var(--ink);padding:62px clamp(22px,7vw,76px) 54px;text-align:center;border:1px solid rgba(183,90,52,.45);outline:1px solid rgba(183,90,52,.22);outline-offset:-9px;box-shadow:0 0 0 12px var(--cream-light),0 40px 90px rgba(20,40,45,.4);transform:rotate(-.6deg)}
+.loft-menu__kicker{font-size:10px;font-weight:600;letter-spacing:.3em;color:var(--clay)}
+.loft-menu__title{margin-top:18px!important;font-family:"Italiana",serif;font-size:clamp(42px,5vw,70px);font-weight:400;line-height:1.02;letter-spacing:-.02em;color:var(--ink)}
+.loft-menu__title em{color:var(--clay)}
+.loft-menu__intro{max-width:440px;margin:18px auto 0!important;font-size:14px;color:var(--ink-soft)}
+.loft-menu__rule{display:flex;align-items:center;gap:16px;margin:38px 0 14px;color:var(--clay)}
+.loft-menu__rule span{flex:1;height:1px;background:rgba(183,90,52,.4)}
+.loft-menu__rule i{font-style:normal;font-size:16px;transform:rotate(-90deg)}
+.loft-menu__list{margin:0;padding:0;list-style:none;text-align:left}
+.loft-menu__list li{border-bottom:1px solid var(--line)}
+.loft-menu__list li:last-child{border-bottom:0}
+.loft-menu__list a{display:block;padding:20px 0;transition:transform .35s cubic-bezier(.16,1,.3,1)}
+.loft-menu__row{display:flex;align-items:baseline;gap:14px}
+.loft-menu__name{font-family:"Italiana",serif;font-size:clamp(24px,2.6vw,32px);line-height:1.15;transition:color .3s}
+.loft-menu__dots{flex:1;min-width:24px;border-bottom:1px dotted rgba(47,41,38,.4);transform:translateY(-.35em)}
+.loft-menu__price{font-size:17px;font-weight:500;letter-spacing:.02em;color:var(--clay);white-space:nowrap}
+.loft-menu__price small{font-family:"DM Sans",Arial,sans-serif;font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);vertical-align:.12em;margin-right:2px}
+.loft-menu__desc{display:block;max-width:470px;margin-top:4px;font-size:13px;color:var(--ink-soft)}
+.loft-menu__list a:hover{transform:translateX(8px)}
+.loft-menu__list a:hover .loft-menu__name{color:var(--clay)}
+.loft-menu__note{margin-top:26px!important;font-size:12px;font-style:italic;color:var(--ink-soft)}
+.loft-menu__actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:18px 34px;margin-top:30px}
+.loft-menu__all{font-size:10px;font-weight:600;letter-spacing:.2em;color:var(--ink);border-bottom:1px solid var(--clay);padding-bottom:4px}
+.loft-menu__all:hover{color:var(--clay)}
+@media (max-width:640px){
+  #loft-home .loft-menu-section{padding:90px 16px}
+  .loft-menu__title em{display:block}
+  .loft-menu__price{font-size:15px}
+  .loft-menu__card{padding:46px 20px 40px;transform:none;box-shadow:0 0 0 8px var(--cream-light),0 30px 60px rgba(20,40,45,.35);outline-offset:-7px}
+  .loft-menu__list a{padding:18px 0}
+  .loft-menu__row{gap:10px}
+  .loft-menu__dots{min-width:14px}
+  .loft-menu__list a:hover{transform:none}
+  .loft-menu__actions .loft-btn{min-width:100%}
+}
 
 @media (prefers-reduced-motion:reduce){
   #loft-home *,#loft-home *:before,#loft-home *:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}
@@ -877,92 +885,60 @@ body:has(#loft-home) {
       </div>
     </section>
 
-    <!-- SERVICES -->
-    <section class="loft-services" id="loft-services">
-      <header class="loft-section-head">
-        <div>
-          <p class="loft-kicker loft-reveal">WHAT WE DO</p>
-          <h2 class="loft-section-title loft-split">Your hair.<br><em>Our craft.</em></h2>
+    <!-- SERVICES MENU -->
+    <section class="loft-menu-section" id="loft-services" aria-labelledby="loftMenuTitle">
+      <div class="loft-menu loft-reveal">
+        <div class="loft-menu__card">
+          <p class="loft-menu__kicker">WHAT WE DO · THE MENU</p>
+          <h2 class="loft-menu__title" id="loftMenuTitle">Your hair. <em>Our craft.</em></h2>
+          <p class="loft-menu__intro">Precision, creativity and care across every appointment, from subtle refreshes to complete transformations.</p>
+          <div class="loft-menu__rule" aria-hidden="true"><span></span><i>✂</i><span></span></div>
+
+          <ul class="loft-menu__list">
+            <li>
+              <a href="/services/#ladies-haircuts">
+                <span class="loft-menu__row"><span class="loft-menu__name">Cut &amp; Style</span><span class="loft-menu__dots" aria-hidden="true"></span><span class="loft-menu__price"><small>from</small> £34.65</span></span>
+                <span class="loft-menu__desc">Thoughtful cutting and styling shaped around your face, texture and everyday routine.</span>
+              </a>
+            </li>
+            <li>
+              <a href="/services/#balayage-and-lived-in-colour">
+                <span class="loft-menu__row"><span class="loft-menu__name">Colour &amp; Balayage</span><span class="loft-menu__dots" aria-hidden="true"></span><span class="loft-menu__price"><small>from</small> £135</span></span>
+                <span class="loft-menu__desc">Custom colour, highlights and balayage designed to complement your skin tone and style.</span>
+              </a>
+            </li>
+            <li>
+              <a href="/services/#blow-dry-bar-service-menu">
+                <span class="loft-menu__row"><span class="loft-menu__name">Textured Hair</span><span class="loft-menu__dots" aria-hidden="true"></span><span class="loft-menu__price">£70</span></span>
+                <span class="loft-menu__desc">Knowledgeable cutting, styling and blowouts for Afro, curly, coily and textured hair.</span>
+              </a>
+            </li>
+            <li>
+              <a href="/services/#remi-cachet-tape-extensions-hair-only">
+                <span class="loft-menu__row"><span class="loft-menu__name">Hair Extensions</span><span class="loft-menu__dots" aria-hidden="true"></span><span class="loft-menu__price"><small>from</small> £55</span></span>
+                <span class="loft-menu__desc">Premium Remi Cachet tape extensions expertly matched, fitted and blended.</span>
+              </a>
+            </li>
+            <li>
+              <a href="/services/#treatments-and-add-ons">
+                <span class="loft-menu__row"><span class="loft-menu__name">Treatments</span><span class="loft-menu__dots" aria-hidden="true"></span><span class="loft-menu__price"><small>from</small> £13.50</span></span>
+                <span class="loft-menu__desc">Restorative treatments and scalp care chosen around your hair’s individual needs.</span>
+              </a>
+            </li>
+          </ul>
+
+          <p class="loft-menu__note">Free consultations for colour, extensions and perms.</p>
+
+          <div class="loft-menu__actions">
+            <a class="loft-btn loft-btn--dark loft-magnetic" href="https://www.fresha.com/a/gareth-at-the-loft-hair-studio-bristol-merton-road-s43w0y8a" target="_blank" rel="noopener">
+              <span>BOOK NOW</span>
+              <span class="loft-btn__circle">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              </span>
+            </a>
+            <a class="loft-menu__all" href="/services/">FULL PRICE LIST →</a>
+          </div>
         </div>
-        <p class="loft-section-head__copy loft-reveal">
-          Precision, creativity and care across every appointment, from subtle refreshes to complete transformations.
-        </p>
-      </header>
-
-      <div class="loft-service-list">
-        <a class="loft-service-row" href="/services/#ladies-haircuts">
-          <span class="loft-service-row__number">01</span>
-          <div class="loft-service-row__title">
-            <small>SHAPE · MOVEMENT · DETAIL</small>
-            <h3>Cut &amp; Style</h3>
-          </div>
-          <p>Thoughtful cutting and styling shaped around your face, texture and everyday routine.</p>
-          <div class="loft-service-row__arrow">↗︎</div>
-          <div class="loft-service-row__image">
-            <img src="/images/20260402_182911.jpg" alt="" loading="lazy" style="object-position:70% center">
-          </div>
-        </a>
-
-        <a class="loft-service-row" href="/services/#balayage-and-lived-in-colour">
-          <span class="loft-service-row__number">02</span>
-          <div class="loft-service-row__title">
-            <small>TONE · DEPTH · DIMENSION</small>
-            <h3>Colour &amp; Balayage</h3>
-          </div>
-          <p>Custom colour, highlights and balayage designed to complement your skin tone and style.</p>
-          <div class="loft-service-row__arrow">↗︎</div>
-          <div class="loft-service-row__image">
-            <img src="/images/20260313_132745.jpg" alt="" loading="lazy" style="object-position:20% center">
-          </div>
-        </a>
-
-        <a class="loft-service-row" href="/services/#blow-dry-bar-service-menu">
-          <span class="loft-service-row__number">03</span>
-          <div class="loft-service-row__title">
-            <small>CURL · COIL · SMOOTH</small>
-            <h3>Textured Hair</h3>
-          </div>
-          <p>Knowledgeable cutting, styling and blowouts for Afro, curly, coily and textured hair.</p>
-          <div class="loft-service-row__arrow">↗︎</div>
-          <div class="loft-service-row__image">
-            <img src="/images/117311809_986911508416113_6667017679160112428_n.jpg" alt="" loading="lazy">
-          </div>
-        </a>
-
-        <a class="loft-service-row" href="/services/#remi-cachet-tape-extensions-hair-only">
-          <span class="loft-service-row__number">04</span>
-          <div class="loft-service-row__title">
-            <small>LENGTH · VOLUME · CONFIDENCE</small>
-            <h3>Hair Extensions</h3>
-          </div>
-          <p>Premium Remi Cachet tape extensions expertly matched, fitted and blended.</p>
-          <div class="loft-service-row__arrow">↗︎</div>
-          <div class="loft-service-row__image">
-            <img src="/images/img-20260313-wa0013.jpg" alt="" loading="lazy">
-          </div>
-        </a>
-
-        <a class="loft-service-row" href="/services/#treatments-and-add-ons">
-          <span class="loft-service-row__number">05</span>
-          <div class="loft-service-row__title">
-            <small>REPAIR · NOURISH · SHINE</small>
-            <h3>Treatments</h3>
-          </div>
-          <p>Restorative treatments and scalp care chosen around your hair’s individual needs.</p>
-          <div class="loft-service-row__arrow">↗︎</div>
-          <div class="loft-service-row__image">
-            <img src="/images/20260313_132759.jpg" alt="" loading="lazy">
-          </div>
-        </a>
-      </div>
-
-      <div class="loft-services__cta">
-        <a class="loft-btn loft-btn--cream loft-magnetic" href="/services/">
-          <span>VIEW ALL SERVICES</span>
-          <span class="loft-btn__circle">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-          </span>
-        </a>
       </div>
     </section>
 
@@ -1330,7 +1306,7 @@ body:has(#loft-home) {
   // Remove broken image boxes gracefully while temporary media library URLs are being tested.
   root.querySelectorAll('img').forEach(img=>{
     img.addEventListener('error',()=>{
-      const figure=img.closest('figure,.loft-image-reveal,.loft-service-row__image,.loft-visit__photo,.loft-booking__image');
+      const figure=img.closest('figure,.loft-image-reveal,.loft-visit__photo,.loft-booking__image');
       if(figure){
         figure.style.background='linear-gradient(135deg,#b65f43,#211916)';
         img.style.opacity='0';
