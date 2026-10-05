@@ -229,13 +229,20 @@ html body :is(#loft-services-page,#loft-contact) .loft-header:not(.is-sticky){
 
 /* ---------- More plants, each page its own ---------- */
 
-/* Home intro: pothos trailing down from the top corner */
-html body #loft-home .loft-intro{position:relative}
-html body #loft-home .loft-intro:before{
-  content:"";position:absolute;right:clamp(16px,5vw,90px);top:-6px;width:270px;height:390px;pointer-events:none;
-  background:url("/images/plant-hanging-pothos.webp") center top/contain no-repeat;
+/* Home intro: pothos pot sitting on the aside copy, vines trailing down its left side.
+   In the image the pot base is ~29% down and ~53% across; the vines run between ~19% and ~45% across. */
+html body #loft-home .loft-intro__aside{position:relative;z-index:1;--pothos:340px}
+html body #loft-home .loft-intro__aside:before{
+  content:"";position:absolute;z-index:-1;pointer-events:none;
+  width:var(--pothos);height:var(--pothos);
+  left:calc(var(--pothos) * -.48 - 14px);top:calc(var(--pothos) * -.32 + 4px);
+  background:url("/images/plant-hanging-pothos-v2.webp") center/contain no-repeat;
 }
-html body #loft-home .loft-intro__aside{position:relative;z-index:1}
+@media (max-width:760px){
+  /* No empty space beside the copy on phones, so indent it to make room for the vines */
+  html body #loft-home .loft-intro__aside{--pothos:240px;padding-left:76px;margin-top:110px}
+  html body #loft-home .loft-intro__aside:before{left:-34px}
+}
 
 /* About values: a leafy garland draped across the top */
 html body #loft-about .about-values{position:relative}
