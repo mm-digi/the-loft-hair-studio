@@ -459,3 +459,9 @@ html body #loft-portfolio .portfolio-booking{
 
 /* Services booking: the arrow sits in a cream circle, so it must not inherit the button's white text */
 html body #loft-services-page .services-booking .loft-btn--dark .loft-btn__circle:not(#_):not(#__){background:var(--cream-light)!important;color:var(--clay)!important}
+
+/* Rounded pill buttons on every page, matching the homepage */
+html body :is(#loft-home,#loft-about,#loft-services-page,#loft-portfolio,#loft-contact,#loft-blog,#loft-post)
+  :is(.loft-btn,.loft-mobile-book,.loft-book-option,.loft-contact-card__button,.blog-article__book,
+      .portfolio-booking>div:last-child a,.contact-booking__buttons a,.service-nav a){border-radius:999px}
+html body :is(#loft-portfolio,#loft-contact) :is(.portfolio-booking>div:last-child a,.contact-booking__buttons a){padding-left:26px;padding-right:24px}
