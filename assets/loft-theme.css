@@ -340,3 +340,80 @@ html body :is(#loft-home,#loft-about,#loft-services-page,#loft-portfolio,#loft-c
 
   .loft-topbar{color:#fff}
 }
+
+/* ---------- Brand sage (#a9b4a0) in place of teal on the inner pages ----------
+   The homepage has its own copy of this in loft-boho.css. Sage is too light for white
+   text, so everything sitting on it switches to the dark ink colour; arrow circles on
+   buttons become cream with a burnt orange arrow. */
+
+html body :is(#loft-about,#loft-services-page,#loft-portfolio,#loft-contact,#loft-blog,#loft-post){
+  --teal:#a9b4a0;
+  --teal-deep:#a9b4a0;
+  --sage-text:#5c6a55;
+  --sage-ink:#3f4b3a;
+
+  /* Top bar and mobile menu */
+  .loft-topbar:not(#_):not(#__){color:var(--ink)}
+  .loft-marquee__track i{background:var(--clay)}
+  .loft-mobile-menu{color:var(--ink)}
+  .loft-mobile-menu .loft-mobile-book{border-color:rgba(47,41,38,.4)}
+
+  /* Buttons */
+  .loft-btn--dark:not(:hover),
+  .loft-btn--dark:not(:hover) span:not(.loft-btn__circle){color:var(--ink)}
+  :is(.loft-hero,.about-hero,.services-hero,.portfolio-hero,.contact-hero) .loft-btn--dark:not(:hover),
+  :is(.loft-hero,.about-hero,.services-hero,.portfolio-hero,.contact-hero) .loft-btn--dark:not(:hover) span:not(.loft-btn__circle){color:#fff}
+  .loft-btn--outline .loft-btn__circle{color:var(--ink)}
+  .loft-btn--outline:hover,.loft-btn--outline:hover span{color:var(--ink)}
+  .loft-btn--dark .loft-btn__circle,
+  :is(.loft-hero,.about-hero,.services-hero,.portfolio-hero,.contact-hero) .loft-btn--dark .loft-btn__circle,
+  .contact-hero .loft-btn--light .loft-btn__circle{background:var(--cream-light);color:var(--clay)}
+  .services-booking .loft-btn--dark .loft-btn__circle:not(#_){background:var(--cream-light);color:var(--clay)}
+  .services-booking .loft-btn--outline .loft-btn__circle:not(#_){color:var(--ink)}
+  .about-booking a.loft-btn--cream .loft-btn__circle:not(#_){background:var(--cream-light)!important;color:var(--clay)!important}
+  .service-nav a:hover:not(#_):not(#__){color:var(--ink)!important}
+  .service-row--consult{background:rgba(169,180,160,.2)}
+
+  /* Small text that was teal */
+  :is(.perm-note strong,.loft-feature>span):not(#_){color:var(--sage-text)}
+
+  /* Panels that were teal: sage with dark text */
+  :is(.services-specialisms,.perm-details__consult,.contact-card--dark,.loft-contact-card,.about-editorial__quote){color:var(--ink)}
+  :is(.services-specialisms,.perm-details__consult,.contact-card--dark,.loft-contact-card,.about-editorial__quote)
+    :is(h1,h2,h3,h4,p,li,span,small,strong,blockquote,cite,dt,dd,a,div):not(.loft-btn):not(.loft-btn *):not(.loft-contact-card__button):not(.loft-contact-card__button *):not(#_):not(#__){color:var(--ink)!important}
+  :is(.services-specialisms,.perm-details__consult,.contact-card--dark,.loft-contact-card,.about-editorial__quote) em:not(.loft-btn *):not(#_):not(#__){color:var(--sage-ink)!important}
+  :is(.services-specialisms,.perm-details__consult,.contact-card--dark,.loft-contact-card) *:not(.loft-btn):not(.loft-btn *){border-color:rgba(47,41,38,.16)}
+}
+
+@media (max-width:760px){
+  html body :is(#loft-about,#loft-blog,#loft-post) .about-editorial:after{
+    background:linear-gradient(180deg,#a9b4a0 0%,rgba(169,180,160,.86) 60%,rgba(169,180,160,0) 100%);
+  }
+}
+
+/* ---------- Teal accents, echoing the velvet sofa in the salon ----------
+   Kept to small details: the round stamp badges and text links on hover.
+   Deep teal reads well on cream (about 5.7:1). */
+
+html body :is(#loft-home,#loft-about,#loft-services-page,#loft-portfolio,#loft-contact,#loft-blog,#loft-post){
+  --brand-teal:#3f6b73;
+
+  /* Stamp badges */
+  :is(.loft-story__stamp,.about-hero__card,.perm-feature__stamp,.contact-hero__badge,.about-booking__stamp,.portfolio-hero__stamp):not(#_):not(#__){
+    color:var(--brand-teal)!important;border-color:rgba(63,107,115,.5)!important;
+  }
+  :is(.loft-story__stamp,.about-hero__card,.perm-feature__stamp,.contact-hero__badge,.about-booking__stamp,.portfolio-hero__stamp)
+    :is(span,small,strong,p,em,b):not(#_):not(#__){color:var(--brand-teal)!important}
+  .loft-floating-card--bottom text{fill:var(--brand-teal)}
+
+  /* Text links turn teal on hover */
+  :is(.loft-text-link,.loft-arrow-link,.loft-menu__all,.loft-review__google,.contact-card__email,
+      .contact-card a:not(.loft-btn),.loft-visit__address a,.loft-booking__note a):hover:not(#_):not(#__){
+    color:var(--brand-teal)!important;border-color:var(--brand-teal)!important;
+  }
+  :is(.loft-text-link,.loft-arrow-link,.loft-menu__all,.loft-review__google,.contact-card__email,
+      .contact-card a:not(.loft-btn),.loft-visit__address a,.loft-booking__note a){transition:color .3s,border-color .3s}
+}
+
+/* About editorial: the small corner photo is gone, so the section fits the main image and quote */
+html body #loft-about .about-editorial{min-height:0}
