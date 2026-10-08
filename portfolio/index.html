@@ -40,7 +40,7 @@ body:has(#loft-portfolio){overflow-x:hidden}
 .portfolio-hero{display:grid;grid-template-columns:.9fr 1.1fr;min-height:950px;background:var(--clay);color:#fff}.portfolio-hero__copy{padding:210px 4vw 100px clamp(25px,7vw,115px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.loft-eyebrow,.loft-kicker{display:flex;align-items:center;gap:15px;font-size:10px;letter-spacing:.25em;font-weight:500}.loft-eyebrow span{width:42px;height:1px;background:currentColor}.portfolio-hero h1,.portfolio-intro h2,.portfolio-gallery-section h2,.portfolio-booking h2{font-family:"Playfair Display",Georgia,serif;font-weight:400;line-height:.98;letter-spacing:-.025em}.portfolio-hero h1{font-size:clamp(53.04px,5.85vw,97.5px);margin:58px 0 35px}.portfolio-hero h1 em{color:var(--cream);font-weight:400}.portfolio-hero__copy>p:not(.loft-eyebrow){max-width:570px;color:rgba(255,255,255,.82);font-size:17px}.portfolio-hero__copy>a{margin-top:42px;border-bottom:1px solid rgba(255,255,255,.7);padding-bottom:8px;font-size:10px;letter-spacing:.18em}.portfolio-hero__copy>a span{margin-left:18px}.portfolio-hero__visual{position:relative;padding:130px 6vw 80px 2vw;display:flex;align-items:center}.portfolio-hero__main{width:80%;height:72%;min-height:650px;margin-left:auto;overflow:hidden;border-radius:280px 280px 0 0;box-shadow:0 35px 80px rgba(40,15,8,.28)}.portfolio-hero__small{position:absolute;left:0;bottom:9%;width:34%;height:35%;border:10px solid var(--clay);overflow:hidden}.portfolio-hero__stamp{position:absolute;right:2.5vw;bottom:6%;width:145px;height:145px;border-radius:50%;background:var(--cream);color:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.portfolio-hero__stamp small,.portfolio-hero__stamp span{font-size:7px;letter-spacing:.2em}.portfolio-hero__stamp strong{font-family:"Playfair Display",Georgia,serif;font-size:35.88px;line-height:1;font-weight:400;color:var(--clay)}
 .portfolio-intro{display:grid;grid-template-columns:1.2fr .8fr;gap:100px;padding:145px clamp(24px,7vw,115px);background:var(--cream-light);color:var(--ink)}.portfolio-intro h2,.portfolio-gallery-section h2,.portfolio-booking h2{font-size:clamp(37.44px,4.21vw,66.3px)}.portfolio-intro h2 em,.portfolio-gallery-section h2 em{color:var(--clay);font-weight:400}.portfolio-intro .loft-kicker,.portfolio-gallery-section .loft-kicker,.portfolio-booking .loft-kicker{color:var(--clay);margin-bottom:28px}.portfolio-intro>div:last-child{align-self:end}.portfolio-intro>div:last-child p{color:var(--ink-soft);font-size:14px;margin-top:18px}
 .portfolio-feature-strip{display:grid;grid-template-columns:repeat(3,1fr);background:var(--ink);color:var(--cream);padding:0 clamp(24px,7vw,115px)}.portfolio-feature-strip article{position:relative;padding:70px 45px;border-left:1px solid rgba(255,255,255,.14)}.portfolio-feature-strip article:last-child{border-right:1px solid rgba(255,255,255,.14)}.portfolio-feature-strip span{font-size:9px;color:var(--rose)}.portfolio-feature-strip h3{font-family:"Playfair Display",Georgia,serif;font-size:28.56px;font-weight:400;margin:20px 0 12px}.portfolio-feature-strip p{font-size:12px;color:rgba(255,255,255,.6)}
-.portfolio-gallery-section{padding:145px clamp(20px,4vw,70px);background:var(--cream);color:var(--ink)}.portfolio-gallery-section>header{display:flex;justify-content:space-between;align-items:flex-end;padding:0 clamp(4px,3vw,45px);margin-bottom:70px}.portfolio-gallery-section>header>p{color:var(--ink-soft);font-size:12px}.portfolio-grid{columns:4 290px;column-gap:18px}.portfolio-item{position:relative;width:100%;padding:0;border:0;background:none;display:block;margin:0 0 18px;break-inside:avoid;overflow:hidden;cursor:zoom-in;color:#fff}.portfolio-item.portrait{aspect-ratio:4/5}.portfolio-item.portrait-tall{aspect-ratio:3/4.6}.portfolio-item.square{aspect-ratio:1}.portfolio-item.landscape{aspect-ratio:1.22/1}.portfolio-item img{transition:transform .8s cubic-bezier(.16,1,.3,1)}.portfolio-item:hover img{transform:scale(1.045)}.portfolio-item__overlay{position:absolute;inset:0;padding:22px;display:grid;grid-template-columns:1fr auto;grid-template-rows:auto 1fr auto;background:linear-gradient(to bottom,rgba(20,10,7,.06),rgba(20,10,7,.05) 45%,rgba(20,10,7,.68));opacity:0;transition:.35s;text-align:left}.portfolio-item:hover .portfolio-item__overlay,.portfolio-item:focus .portfolio-item__overlay{opacity:1}.portfolio-item__overlay small{font-size:8px;letter-spacing:.17em}.portfolio-item__overlay strong{grid-column:1;grid-row:3;font-family:"Playfair Display",Georgia,serif;font-size:19.8px;font-weight:400}.portfolio-item__overlay i{grid-column:2;grid-row:3;font-style:normal;font-size:8px;letter-spacing:.15em;align-self:end}
+.portfolio-gallery-section{padding:145px clamp(20px,4vw,70px);background:var(--cream);color:var(--ink)}.portfolio-gallery-section>header{display:flex;justify-content:space-between;align-items:flex-end;padding:0 clamp(4px,3vw,45px);margin-bottom:70px}.portfolio-gallery-section>header>p{color:var(--ink-soft);font-size:12px}.portfolio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.portfolio-item{position:relative;width:100%;padding:0;border:0;background:none;display:block;margin:0;aspect-ratio:4/5!important;overflow:hidden;cursor:zoom-in;color:#fff}.portfolio-item.portrait{aspect-ratio:4/5}.portfolio-item.portrait-tall{aspect-ratio:3/4.6}.portfolio-item.square{aspect-ratio:1}.portfolio-item.landscape{aspect-ratio:1.22/1}.portfolio-item img{transition:transform .8s cubic-bezier(.16,1,.3,1)}.portfolio-item:hover img{transform:scale(1.045)}.portfolio-item__overlay{position:absolute;inset:0;padding:22px;display:grid;grid-template-columns:1fr auto;grid-template-rows:auto 1fr auto;background:linear-gradient(to bottom,rgba(20,10,7,.06),rgba(20,10,7,.05) 45%,rgba(20,10,7,.68));opacity:0;transition:.35s;text-align:left}.portfolio-item:hover .portfolio-item__overlay,.portfolio-item:focus .portfolio-item__overlay{opacity:1}.portfolio-item__overlay small{font-size:8px;letter-spacing:.17em}.portfolio-item__overlay strong{grid-column:1;grid-row:3;font-family:"Playfair Display",Georgia,serif;font-size:19.8px;font-weight:400}.portfolio-item__overlay i{grid-column:2;grid-row:3;font-style:normal;font-size:8px;letter-spacing:.15em;align-self:end}
 .portfolio-quote{position:relative;padding:145px clamp(24px,12vw,210px);background:var(--cream-light);color:var(--ink);text-align:center;overflow:hidden}.portfolio-quote__mark{position:absolute;top:-120px;left:50%;transform:translateX(-50%);font-family:"Playfair Display",Georgia,serif;font-size:390px;color:rgba(182,95,67,.07);line-height:1}.portfolio-quote blockquote{position:relative;font-family:"Playfair Display",Georgia,serif;font-size:clamp(32.76px,4.29vw,63.96px);line-height:1.15}.portfolio-quote p{position:relative;margin-top:35px;font-size:9px;letter-spacing:.2em;color:var(--clay)}
 .portfolio-booking{display:grid;grid-template-columns:1fr .8fr;gap:90px;align-items:end;padding:130px clamp(24px,7vw,115px);background:var(--clay);color:#fff}.portfolio-booking h2{color:#fff}.portfolio-booking h2 em{color:var(--cream);font-weight:400}.portfolio-booking .loft-kicker{color:var(--cream)}.portfolio-booking>div:last-child p{color:rgba(255,255,255,.76);margin-bottom:30px}.portfolio-booking>div:last-child a{display:flex;justify-content:space-between;border:1px solid rgba(255,255,255,.45);padding:17px 19px;margin-top:12px;font-size:10px;letter-spacing:.16em;transition:.3s}.portfolio-booking>div:last-child a:hover{background:var(--cream);color:var(--ink)}
 .loft-footer{background:#17110f;color:var(--cream);padding:95px clamp(24px,6vw,95px) 28px}.loft-footer__top{display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:65px;border-bottom:1px solid rgba(255,255,255,.14)}.loft-footer__brand{display:flex;flex-direction:column;align-items:center;line-height:.85}.loft-footer__brand span{font-size:8px;letter-spacing:.55em;margin-left:.55em}.loft-footer__brand strong{font-family:"Playfair Display",Georgia,serif;font-size:63.96px;font-weight:400}.loft-footer__brand small{font-size:8px;letter-spacing:.28em}.loft-footer__statement p{font-family:"Playfair Display",Georgia,serif;font-size:clamp(27.3px,3.12vw,46.8px);line-height:1.05;text-align:right}.loft-footer__statement em{color:var(--rose)}.loft-footer__middle{display:grid;grid-template-columns:.65fr .65fr .65fr 1.4fr;gap:50px;padding:65px 0}.loft-footer__middle nav,.loft-footer__contact{display:flex;flex-direction:column;align-items:flex-start;gap:8px}.loft-footer__middle nav>span,.loft-footer__contact>span{font-size:8px;letter-spacing:.22em;color:var(--rose);margin-bottom:13px}.loft-footer__middle nav a{font-family:"Playfair Display",Georgia,serif;font-size:18px}.loft-footer__contact{margin-left:auto}.loft-footer__contact p,.loft-footer__contact a{font-size:12px;color:rgba(255,255,255,.65)}.loft-footer__bottom{display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,.14);padding-top:25px;font-size:8px;letter-spacing:.14em;color:rgba(255,255,255,.52)}.loft-footer__bottom div{display:flex;gap:25px}
@@ -50,8 +50,8 @@ body:has(#loft-portfolio){overflow-x:hidden}
 .portfolio-hero h1{font-size:clamp(42.12px,4.37vw,71.76px)}.portfolio-hero h1 span,.portfolio-hero h1 em{display:block;white-space:nowrap}
 @keyframes loftMarquee{to{transform:translateX(-50%)}}
 @media(max-width:1050px){.loft-nav,.loft-header-book{display:none}.loft-menu-toggle{display:block}.portfolio-hero{grid-template-columns:1fr}.portfolio-hero__copy{padding-bottom:70px}.portfolio-hero__visual{min-height:760px;padding-top:20px}.portfolio-intro,.portfolio-booking{grid-template-columns:1fr;gap:55px}.portfolio-feature-strip{grid-template-columns:1fr}.portfolio-feature-strip article{border-right:1px solid rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.14)}.loft-footer__middle{grid-template-columns:repeat(3,1fr)}.loft-footer__contact{grid-column:1/-1;margin-left:0}}
-@media(max-width:760px){.loft-header{height:84px;padding:0 20px}.loft-brand__main{font-size:26.88px}.portfolio-hero__copy{padding:165px 24px 75px}.portfolio-hero h1{font-size:clamp(45.24px,13.26vw,68.64px);margin-top:44px}.portfolio-hero__visual{min-height:620px;padding:20px 24px 65px}.portfolio-hero__main{width:88%;min-height:520px}.portfolio-hero__small{left:15px;width:38%;height:32%;border-width:7px}.portfolio-hero__stamp{right:17px;width:115px;height:115px}.portfolio-intro,.portfolio-booking{padding:95px 24px}.portfolio-feature-strip{padding:0 24px}.portfolio-feature-strip article{padding:52px 28px}.portfolio-gallery-section{padding:95px 16px}.portfolio-gallery-section>header{display:block;margin-bottom:45px}.portfolio-gallery-section>header>p{margin-top:20px}.portfolio-grid{columns:2 145px;column-gap:10px}.portfolio-item{margin-bottom:10px}.portfolio-item__overlay{display:none}.portfolio-quote{padding:105px 24px}.loft-footer{padding-top:75px}.loft-footer__top{display:block}.loft-footer__statement{margin-top:55px}.loft-footer__statement p{text-align:left}.loft-footer__middle{grid-template-columns:1fr 1fr}.loft-footer__contact{grid-column:1/-1}.loft-footer__bottom{flex-direction:column;gap:16px;text-align:center}.portfolio-lightbox{padding:20px}.portfolio-lightbox__prev{left:10px}.portfolio-lightbox__next{right:10px}.portfolio-lightbox button{width:44px;height:44px}}
-@media(max-width:480px){.portfolio-grid{columns:1}.portfolio-item.portrait,.portfolio-item.portrait-tall,.portfolio-item.square,.portfolio-item.landscape{aspect-ratio:4/5}.portfolio-intro h2,.portfolio-gallery-section h2,.portfolio-booking h2{font-size:37.44px}.loft-footer__middle{grid-template-columns:1fr}.loft-footer__brand strong{font-size:50.7px}}
+@media(max-width:760px){.loft-header{height:84px;padding:0 20px}.loft-brand__main{font-size:26.88px}.portfolio-hero__copy{padding:165px 24px 75px}.portfolio-hero h1{font-size:clamp(45.24px,13.26vw,68.64px);margin-top:44px}.portfolio-hero__visual{min-height:620px;padding:20px 24px 65px}.portfolio-hero__main{width:88%;min-height:520px}.portfolio-hero__small{left:15px;width:38%;height:32%;border-width:7px}.portfolio-hero__stamp{right:17px;width:115px;height:115px}.portfolio-intro,.portfolio-booking{padding:95px 24px}.portfolio-feature-strip{padding:0 24px}.portfolio-feature-strip article{padding:52px 28px}.portfolio-gallery-section{padding:95px 16px}.portfolio-gallery-section>header{display:block;margin-bottom:45px}.portfolio-gallery-section>header>p{margin-top:20px}.portfolio-grid{grid-template-columns:repeat(2,1fr);gap:10px}.portfolio-item__overlay{display:none}.portfolio-quote{padding:105px 24px}.loft-footer{padding-top:75px}.loft-footer__top{display:block}.loft-footer__statement{margin-top:55px}.loft-footer__statement p{text-align:left}.loft-footer__middle{grid-template-columns:1fr 1fr}.loft-footer__contact{grid-column:1/-1}.loft-footer__bottom{flex-direction:column;gap:16px;text-align:center}.portfolio-lightbox{padding:20px}.portfolio-lightbox__prev{left:10px}.portfolio-lightbox__next{right:10px}.portfolio-lightbox button{width:44px;height:44px}}
+@media(max-width:480px){.portfolio-grid{grid-template-columns:1fr}.portfolio-item.portrait,.portfolio-item.portrait-tall,.portfolio-item.square,.portfolio-item.landscape{aspect-ratio:4/5}.portfolio-intro h2,.portfolio-gallery-section h2,.portfolio-booking h2{font-size:37.44px}.loft-footer__middle{grid-template-columns:1fr}.loft-footer__brand strong{font-size:50.7px}}
 @media(max-width:760px){.portfolio-hero h1{font-size:clamp(32.76px,9.36vw,49.92px)}}
 @media(prefers-reduced-motion:reduce){#loft-portfolio *,#loft-portfolio *:before,#loft-portfolio *:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 #loft-portfolio .loft-brand img{width:150px!important;height:90px!important;object-fit:contain!important;transition:filter .35s}
@@ -104,7 +104,7 @@ body:has(#loft-portfolio){overflow-x:hidden}
   <main>
     <section class="portfolio-hero">
       <div class="portfolio-hero__copy"><p class="loft-eyebrow"><span></span>OUR WORK</p><h1><span>Made in the chair.</span><em>Worn in real life.</em></h1><p>From soft, lived-in colour to precision cuts and beautifully finished texture, every result is created around the person wearing it.</p><a href="#portfolio-gallery">EXPLORE THE PORTFOLIO <span>↓</span></a></div>
-      <div class="portfolio-hero__visual"><div class="portfolio-hero__main"><img src="/images/20260327_150513.jpg" alt="Glossy brunette cut and colour by The Loft Hair Studio" fetchpriority="high"></div><div class="portfolio-hero__small"><img src="/images/20260227_163050.jpg" alt="Soft blonde layers by The Loft Hair Studio"></div></div>
+      <div class="portfolio-hero__visual"><div class="portfolio-hero__main"><img src="/images/leaf-work-30.jpg" alt="Chocolate brunette with full layers by The Loft Hair Studio" fetchpriority="high"></div><div class="portfolio-hero__small"><img src="/images/leaf-work-44.jpg" alt="Blonde face-framing balayage by The Loft Hair Studio"></div></div>
     </section>
 
     <section class="portfolio-intro"><div><p class="loft-kicker">BEAUTIFULLY PERSONAL</p><h2>Hair that looks polished.<br><em>Never overdone.</em></h2></div><div><p>Our portfolio brings together colour, cutting, texture, styling and transformations created at The Loft Hair Studio.</p><p>Every appointment begins with a considered consultation, so the final result complements your features, your hair and the way you actually live.</p></div></section>
@@ -115,198 +115,247 @@ body:has(#loft-portfolio){overflow-x:hidden}
       <article><span>03</span><h3>Wearable texture</h3><p>Finishes that feel effortless in the salon and beyond it.</p></article>
     </section>
 
-    <section class="portfolio-gallery-section" id="portfolio-gallery"><header><div><p class="loft-kicker">THE PORTFOLIO</p><h2>A closer look<br><em>at our craft.</em></h2></div><p>Tap or click any image to view it in full.</p></header><div class="portfolio-grid"><button class="portfolio-item landscape" type="button" data-full="/images/20260320_150609.jpg" aria-label="Open portfolio image 1">
-  <img src="/images/20260320_150609.jpg" alt="Blonde layered finish by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>01</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
+    <section class="portfolio-gallery-section" id="portfolio-gallery"><header><div><p class="loft-kicker">THE PORTFOLIO</p><h2>A closer look<br><em>at our craft.</em></h2></div><p>Tap or click any image to view it in full.</p></header><div class="portfolio-grid"><button class="portfolio-item portrait" type="button" data-full="/images/leaf-perm-curls.jpg" aria-label="Open portfolio image 1">
+  <img src="/images/leaf-perm-curls.jpg" alt="Curly perm with defined texture by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>01</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item square" type="button" data-full="/images/85153839_860014227772509_6074953811074482176_n.jpg" aria-label="Open portfolio image 2">
-  <img src="/images/85153839_860014227772509_6074953811074482176_n.jpg" alt="Soft blonde curls by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>02</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-recent-01.jpg" aria-label="Open portfolio image 2">
+  <img src="/images/leaf-recent-01.jpg" alt="Long brunette layers with soft waves by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>02</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait-tall" type="button" data-full="/images/20260213_114426.jpg" aria-label="Open portfolio image 3">
-  <img src="/images/20260213_114426.jpg" alt="Dimensional brunette layers by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>03</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-recent-02.jpg" aria-label="Open portfolio image 3">
+  <img src="/images/leaf-recent-02.jpg" alt="Defined auburn curls by The Loft Hair Studio" style="object-position:28% center" loading="lazy">
+  <span class="portfolio-item__overlay"><small>03</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait" type="button" data-full="/images/20260327_150421.jpg" aria-label="Open portfolio image 4">
-  <img src="/images/20260327_150421.jpg" alt="Glossy brunette cut and finish by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>04</small><strong>LIVED-IN COLOUR</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-recent-03.jpg" aria-label="Open portfolio image 4">
+  <img src="/images/leaf-recent-03.jpg" alt="Caramel balayage with loose waves by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>04</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item landscape" type="button" data-full="/images/20260320_150621.jpg" aria-label="Open portfolio image 5">
-  <img src="/images/20260320_150621.jpg" alt="Soft blonde colour and movement by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>05</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-01.jpg" aria-label="Open portfolio image 5">
+  <img src="/images/leaf-work-01.jpg" alt="Sleek blunt cut in soft brunette by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>05</small><strong>PRECISION CUT</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item square" type="button" data-full="/images/20260128_142646.jpg" aria-label="Open portfolio image 6">
-  <img src="/images/20260128_142646.jpg" alt="Soft blonde layered finish by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>06</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-02.jpg" aria-label="Open portfolio image 6">
+  <img src="/images/leaf-work-02.jpg" alt="Bouncy brunette blow-dry with soft curls by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>06</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait-tall" type="button" data-full="/images/20260313_132543.jpg" aria-label="Open portfolio image 7">
-  <img src="/images/20260313_132543.jpg" alt="Dimensional brunette colour by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>07</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-03.jpg" aria-label="Open portfolio image 7">
+  <img src="/images/leaf-work-03.jpg" alt="Dark brunette with warm copper ends by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>07</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait" type="button" data-full="/images/85005322_860014334439165_7462599513245483008_n.jpg" aria-label="Open portfolio image 8">
-  <img src="/images/85005322_860014334439165_7462599513245483008_n.jpg" alt="Cool blonde colour and soft layers by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>08</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-04.jpg" aria-label="Open portfolio image 8">
+  <img src="/images/leaf-work-04.jpg" alt="Natural curls with bright blonde highlights by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>08</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item landscape" type="button" data-full="/images/44277360_552939805146621_8813769973726969856_n.jpg" aria-label="Open portfolio image 9">
-  <img src="/images/44277360_552939805146621_8813769973726969856_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>09</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-05.jpg" aria-label="Open portfolio image 9">
+  <img src="/images/leaf-work-05.jpg" alt="Long dark layers with warm copper tones by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>09</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item square" type="button" data-full="/images/20260207_124518.jpg" aria-label="Open portfolio image 10">
-  <img src="/images/20260207_124518.jpg" alt="Creative split colour by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>10</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-06.jpg" aria-label="Open portfolio image 10">
+  <img src="/images/leaf-work-06.jpg" alt="Golden strawberry blonde with soft waves by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>10</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait-tall" type="button" data-full="/images/46147877_566367700470498_3757441135199387648_n.jpg" aria-label="Open portfolio image 11">
-  <img src="/images/46147877_566367700470498_3757441135199387648_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>11</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-07.jpg" aria-label="Open portfolio image 11">
+  <img src="/images/leaf-work-07.jpg" alt="Long golden blonde waves by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>11</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait" type="button" data-full="/images/48396233_586160138491254_1975363507922665472_n.jpg" aria-label="Open portfolio image 12">
-  <img src="/images/48396233_586160138491254_1975363507922665472_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>12</small><strong>LIVED-IN COLOUR</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-08.jpg" aria-label="Open portfolio image 12">
+  <img src="/images/leaf-work-08.jpg" alt="Brunette balayage with long face-framing layers by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>12</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item landscape" type="button" data-full="/images/52378347_615985648842036_4636408253910089728_n.jpg" aria-label="Open portfolio image 13">
-  <img src="/images/52378347_615985648842036_4636408253910089728_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>13</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-09.jpg" aria-label="Open portfolio image 13">
+  <img src="/images/leaf-work-09.jpg" alt="Sleek, cool blonde lengths by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>13</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item square" type="button" data-full="/images/20260327_150508.jpg" aria-label="Open portfolio image 14">
-  <img src="/images/20260327_150508.jpg" alt="Glossy brunette styling by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>14</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-10.jpg" aria-label="Open portfolio image 14">
+  <img src="/images/leaf-work-10.jpg" alt="Glossy long black hair with curtain layers by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>14</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait-tall" type="button" data-full="/images/54434186_634143513692916_4936408567029694464_n.jpg" aria-label="Open portfolio image 15">
-  <img src="/images/54434186_634143513692916_4936408567029694464_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>15</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-11.jpg" aria-label="Open portfolio image 15">
+  <img src="/images/leaf-work-11.jpg" alt="Dark brunette with copper balayage by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>15</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait" type="button" data-full="/images/54799651_638116876628913_4706616774332776448_n.jpg" aria-label="Open portfolio image 16">
-  <img src="/images/54799651_638116876628913_4706616774332776448_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>16</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-12.jpg" aria-label="Open portfolio image 16">
+  <img src="/images/leaf-work-12.jpg" alt="Vivid copper colour with bouncy layers by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>16</small><strong>VIVID COLOUR</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item landscape" type="button" data-full="/images/55554486_634143537026247_5129132146262278144_n.jpg" aria-label="Open portfolio image 17">
-  <img src="/images/55554486_634143537026247_5129132146262278144_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>17</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-13.jpg" aria-label="Open portfolio image 17">
+  <img src="/images/leaf-work-13.jpg" alt="Soft golden blonde with face-framing layers by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>17</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item square" type="button" data-full="/images/20260227_163324.jpg" aria-label="Open portfolio image 18">
-  <img src="/images/20260227_163324.jpg" alt="Dimensional blonde styling by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>18</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-14.jpg" aria-label="Open portfolio image 18">
+  <img src="/images/leaf-work-14.jpg" alt="Honey blonde layers with soft movement by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>18</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait-tall" type="button" data-full="/images/57000719_648434865597114_5805120716881788928_n.jpg" aria-label="Open portfolio image 19">
-  <img src="/images/57000719_648434865597114_5805120716881788928_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>19</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-15.jpg" aria-label="Open portfolio image 19">
+  <img src="/images/leaf-work-15.jpg" alt="Pink and yellow split-dye colour by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>19</small><strong>VIVID COLOUR</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait" type="button" data-full="/images/59389337_657421978031736_4284989511445774336_n.jpg" aria-label="Open portfolio image 20">
-  <img src="/images/59389337_657421978031736_4284989511445774336_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>20</small><strong>LIVED-IN COLOUR</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-16.jpg" aria-label="Open portfolio image 20">
+  <img src="/images/leaf-work-16.jpg" alt="Layered brunette bob with warm highlights by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>20</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item landscape" type="button" data-full="/images/59433612_655250718248862_2621755407365832704_n.jpg" aria-label="Open portfolio image 21">
-  <img src="/images/59433612_655250718248862_2621755407365832704_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>21</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-17.jpg" aria-label="Open portfolio image 21">
+  <img src="/images/leaf-work-17.jpg" alt="Golden blonde with curled ends by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>21</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item square" type="button" data-full="/images/20260313_132602.jpg" aria-label="Open portfolio image 22">
-  <img src="/images/20260313_132602.jpg" alt="Glossy brunette layers by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>22</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-18.jpg" aria-label="Open portfolio image 22">
+  <img src="/images/leaf-work-18.jpg" alt="Light brunette waves with lived-in colour by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>22</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait-tall" type="button" data-full="/images/60032028_661720260935241_522734997807824896_n.jpg" aria-label="Open portfolio image 23">
-  <img src="/images/60032028_661720260935241_522734997807824896_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>23</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-19.jpg" aria-label="Open portfolio image 23">
+  <img src="/images/leaf-work-19.jpg" alt="Bright blonde layered cut by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>23</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait" type="button" data-full="/images/60049813_661161684324432_2937491252297334784_n.jpg" aria-label="Open portfolio image 24">
-  <img src="/images/60049813_661161684324432_2937491252297334784_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>24</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-20.jpg" aria-label="Open portfolio image 24">
+  <img src="/images/leaf-work-20.jpg" alt="Icy blonde with soft layers by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>24</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item landscape" type="button" data-full="/images/60123195_661159577657976_2536288611897180160_n.jpg" aria-label="Open portfolio image 25">
-  <img src="/images/60123195_661159577657976_2536288611897180160_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-21.jpg" aria-label="Open portfolio image 25">
+  <img src="/images/leaf-work-21.jpg" alt="Bronde balayage with loose waves by The Loft Hair Studio" loading="lazy">
   <span class="portfolio-item__overlay"><small>25</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item square" type="button" data-full="/images/82879843_855882388185693_8654036132784242688_n.jpg" aria-label="Open portfolio image 26">
-  <img src="/images/82879843_855882388185693_8654036132784242688_n.jpg" alt="Soft blonde colour and movement by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>26</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-22.jpg" aria-label="Open portfolio image 26">
+  <img src="/images/leaf-work-22.jpg" alt="Long blonde beach waves by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>26</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait-tall" type="button" data-full="/images/60352438_664609303979670_6220443341440417792_n.jpg" aria-label="Open portfolio image 27">
-  <img src="/images/60352438_664609303979670_6220443341440417792_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>27</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-23.jpg" aria-label="Open portfolio image 27">
+  <img src="/images/leaf-work-23.jpg" alt="Long golden blonde lengths by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>27</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait" type="button" data-full="/images/62577983_683345555439378_3496303421340778496_n.jpg" aria-label="Open portfolio image 28">
-  <img src="/images/62577983_683345555439378_3496303421340778496_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>28</small><strong>LIVED-IN COLOUR</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-25.jpg" aria-label="Open portfolio image 28">
+  <img src="/images/leaf-work-25.jpg" alt="Voluminous dark brunette blow-dry by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>28</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item landscape" type="button" data-full="/images/64294962_683216245452309_204092538053722112_n.jpg" aria-label="Open portfolio image 29">
-  <img src="/images/64294962_683216245452309_204092538053722112_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>29</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-26.jpg" aria-label="Open portfolio image 29">
+  <img src="/images/leaf-work-26.jpg" alt="Warm auburn with bouncy volume by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>29</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item square" type="button" data-full="/images/20260402_182950.jpg" aria-label="Open portfolio image 30">
-  <img src="/images/20260402_182950.jpg" alt="Precision crop by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>30</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-27.jpg" aria-label="Open portfolio image 30">
+  <img src="/images/leaf-work-27.jpg" alt="Brunette with caramel balayage curls by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>30</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait-tall" type="button" data-full="/images/64925000_686003831840217_6644959764402929664_n.jpg" aria-label="Open portfolio image 31">
-  <img src="/images/64925000_686003831840217_6644959764402929664_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>31</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-28.jpg" aria-label="Open portfolio image 31">
+  <img src="/images/leaf-work-28.jpg" alt="Bright blonde ribbons through a brunette base by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>31</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait" type="button" data-full="/images/64948495_690255574748376_3258681787299135488_n.jpg" aria-label="Open portfolio image 32">
-  <img src="/images/64948495_690255574748376_3258681787299135488_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>32</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-29.jpg" aria-label="Open portfolio image 32">
+  <img src="/images/leaf-work-29.jpg" alt="Rich chocolate brunette curled layers by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>32</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item landscape" type="button" data-full="/images/65139628_690713168035950_8456127716276568064_n.jpg" aria-label="Open portfolio image 33">
-  <img src="/images/65139628_690713168035950_8456127716276568064_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>33</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-30.jpg" aria-label="Open portfolio image 33">
+  <img src="/images/leaf-work-30.jpg" alt="Chocolate brunette with full layers by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>33</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item square" type="button" data-full="/images/20260402_182911.jpg" aria-label="Open portfolio image 34">
-  <img src="/images/20260402_182911.jpg" alt="Precision red pixie cut by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>34</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-31.jpg" aria-label="Open portfolio image 34">
+  <img src="/images/leaf-work-31.jpg" alt="Cool blonde with soft waves by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>34</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait-tall" type="button" data-full="/images/65645910_692811224492811_9181514999279910912_n.jpg" aria-label="Open portfolio image 35">
-  <img src="/images/65645910_692811224492811_9181514999279910912_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>35</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-32.jpg" aria-label="Open portfolio image 35">
+  <img src="/images/leaf-work-32.jpg" alt="Mushroom blonde layered cut by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>35</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait" type="button" data-full="/images/65706160_692811107826156_4994098941411721216_n.jpg" aria-label="Open portfolio image 36">
-  <img src="/images/65706160_692811107826156_4994098941411721216_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>36</small><strong>LIVED-IN COLOUR</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-33.jpg" aria-label="Open portfolio image 36">
+  <img src="/images/leaf-work-33.jpg" alt="Copper colour with curled layers by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>36</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item landscape" type="button" data-full="/images/65731870_692810904492843_95599185960632320_n.jpg" aria-label="Open portfolio image 37">
-  <img src="/images/65731870_692810904492843_95599185960632320_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>37</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-34.jpg" aria-label="Open portfolio image 37">
+  <img src="/images/leaf-work-34.jpg" alt="Blonde with a lived-in root by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>37</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item square" type="button" data-full="/images/20260402_182920.jpg" aria-label="Open portfolio image 38">
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-35.jpg" aria-label="Open portfolio image 38">
+  <img src="/images/leaf-work-35.jpg" alt="Copper blow-dry with volume by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>38</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-36.jpg" aria-label="Open portfolio image 39">
+  <img src="/images/leaf-work-36.jpg" alt="Auburn layers with a curtain fringe by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>39</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-37.jpg" aria-label="Open portfolio image 40">
+  <img src="/images/leaf-work-37.jpg" alt="Golden blonde balayage by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>40</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-38.jpg" aria-label="Open portfolio image 41">
+  <img src="/images/leaf-work-38.jpg" alt="Caramel blonde with dimension by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>41</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-39.jpg" aria-label="Open portfolio image 42">
+  <img src="/images/leaf-work-39.jpg" alt="Blonde balayage with a soft root by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>42</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-40.jpg" aria-label="Open portfolio image 43">
+  <img src="/images/leaf-work-40.jpg" alt="Platinum blonde finish by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>43</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-41.jpg" aria-label="Open portfolio image 44">
+  <img src="/images/leaf-work-41.jpg" alt="Long blonde waves by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>44</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-42.jpg" aria-label="Open portfolio image 45">
+  <img src="/images/leaf-work-42.jpg" alt="Bright blonde with soft waves by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>45</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-43.jpg" aria-label="Open portfolio image 46">
+  <img src="/images/leaf-work-43.jpg" alt="Root shadow blonde with curled ends by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>46</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-44.jpg" aria-label="Open portfolio image 47">
+  <img src="/images/leaf-work-44.jpg" alt="Blonde face-framing balayage by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>47</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-45.jpg" aria-label="Open portfolio image 48">
+  <img src="/images/leaf-work-45.jpg" alt="Soft blonde balayage by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>48</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-46.jpg" aria-label="Open portfolio image 49">
+  <img src="/images/leaf-work-46.jpg" alt="Golden blonde layered cut by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>49</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-47.jpg" aria-label="Open portfolio image 50">
+  <img src="/images/leaf-work-47.jpg" alt="Creamy blonde layered bob by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>50</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/leaf-work-48.jpg" aria-label="Open portfolio image 51">
+  <img src="/images/leaf-work-48.jpg" alt="Black hair with voluminous layers by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>51</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-49.jpg" aria-label="Open portfolio image 52">
+  <img src="/images/leaf-work-49.jpg" alt="Caramel brunette balayage by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>52</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/leaf-work-50.jpg" aria-label="Open portfolio image 53">
+  <img src="/images/leaf-work-50.jpg" alt="Long sleek ash blonde by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>53</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/20260213_114426.jpg" aria-label="Open portfolio image 54">
+  <img src="/images/20260213_114426.jpg" alt="Dimensional brunette layers by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>54</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait" type="button" data-full="/images/20260327_150421.jpg" aria-label="Open portfolio image 55">
+  <img src="/images/20260327_150421.jpg" alt="Glossy brunette cut and finish by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>55</small><strong>LIVED-IN COLOUR</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item landscape" type="button" data-full="/images/20260320_150621.jpg" aria-label="Open portfolio image 56">
+  <img src="/images/20260320_150621.jpg" alt="Soft blonde colour and movement by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>56</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item portrait-tall" type="button" data-full="/images/20260313_132543.jpg" aria-label="Open portfolio image 57">
+  <img src="/images/20260313_132543.jpg" alt="Dimensional brunette colour by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>57</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item square" type="button" data-full="/images/20260207_124518.jpg" aria-label="Open portfolio image 58">
+  <img src="/images/20260207_124518.jpg" alt="Creative split colour by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>58</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item square" type="button" data-full="/images/20260227_163324.jpg" aria-label="Open portfolio image 59">
+  <img src="/images/20260227_163324.jpg" alt="Dimensional blonde styling by The Loft Hair Studio" loading="lazy">
+  <span class="portfolio-item__overlay"><small>59</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
+</button>
+<button class="portfolio-item square" type="button" data-full="/images/20260402_182920.jpg" aria-label="Open portfolio image 60">
   <img src="/images/20260402_182920.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>38</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
+  <span class="portfolio-item__overlay"><small>60</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
 </button>
-<button class="portfolio-item portrait-tall" type="button" data-full="/images/66083030_694924194281514_9131210100336230400_n.jpg" aria-label="Open portfolio image 39">
-  <img src="/images/66083030_694924194281514_9131210100336230400_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>39</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
-</button>
-<button class="portfolio-item portrait" type="button" data-full="/images/66253636_698756237231643_4185010055843676160_n.jpg" aria-label="Open portfolio image 40">
-  <img src="/images/66253636_698756237231643_4185010055843676160_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>40</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
-</button>
-<button class="portfolio-item landscape" type="button" data-full="/images/66520528_700468783727055_6710946022736003072_n.jpg" aria-label="Open portfolio image 41">
-  <img src="/images/66520528_700468783727055_6710946022736003072_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>41</small><strong>SOFT BLEND</strong><i>VIEW ↗</i></span>
-</button>
-<button class="portfolio-item square" type="button" data-full="/images/20260327_150648.jpg" aria-label="Open portfolio image 42">
-  <img src="/images/20260327_150648.jpg" alt="Dimensional brunette finish by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>42</small><strong>MODERN SHAPE</strong><i>VIEW ↗</i></span>
-</button>
-<button class="portfolio-item portrait-tall" type="button" data-full="/images/66625873_699316667175600_8248817813926445056_n.jpg" aria-label="Open portfolio image 43">
-  <img src="/images/66625873_699316667175600_8248817813926445056_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>43</small><strong>GLOSS + MOVEMENT</strong><i>VIEW ↗</i></span>
-</button>
-<button class="portfolio-item portrait" type="button" data-full="/images/67183668_700468747060392_3568781119014830080_n.jpg" aria-label="Open portfolio image 44">
-  <img src="/images/67183668_700468747060392_3568781119014830080_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>44</small><strong>LIVED-IN COLOUR</strong><i>VIEW ↗</i></span>
-</button>
-<button class="portfolio-item landscape" type="button" data-full="/images/67439983_703416656765601_2496842326580658176_n.jpg" aria-label="Open portfolio image 45">
-  <img src="/images/67439983_703416656765601_2496842326580658176_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>45</small><strong>TEXTURE</strong><i>VIEW ↗</i></span>
-</button>
-<button class="portfolio-item square" type="button" data-full="/images/20260313_132536.jpg" aria-label="Open portfolio image 46">
-  <img src="/images/20260313_132536.jpg" alt="Soft brunette layers by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>46</small><strong>FRESH FINISH</strong><i>VIEW ↗</i></span>
-</button>
-<button class="portfolio-item portrait-tall" type="button" data-full="/images/67498547_710650986042168_4323896503488741376_n.jpg" aria-label="Open portfolio image 47">
-  <img src="/images/67498547_710650986042168_4323896503488741376_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>47</small><strong>BESPOKE TONE</strong><i>VIEW ↗</i></span>
-</button>
-<button class="portfolio-item portrait" type="button" data-full="/images/67642738_715785058862094_6700078050375106560_n.jpg" aria-label="Open portfolio image 48">
-  <img src="/images/67642738_715785058862094_6700078050375106560_n.jpg" alt="Hair transformation by The Loft Hair Studio" loading="lazy">
-  <span class="portfolio-item__overlay"><small>48</small><strong>DIMENSIONAL COLOUR</strong><i>VIEW ↗</i></span>
-</button></div></section>
+</div></section>
 
     <section class="portfolio-quote"><span class="portfolio-quote__mark">“</span><blockquote>Good hair should still feel like you, only brighter, fresher and more confident.</blockquote><p>THE LOFT HAIR STUDIO · BRISTOL</p></section>
 
