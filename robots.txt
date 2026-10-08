@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.lofthairstudiobristol.co.uk/sitemap.xml
