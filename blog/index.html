@@ -260,10 +260,19 @@ body:has(#loft-blog){overflow-x:hidden}
         <div class="about-hero__image loft-image-reveal">
           <img src="/images/studio-new-2.jpg" alt="Inside The Loft Hair Studio in Bristol" fetchpriority="high">
         </div>
-        <div class="about-hero__card loft-reveal"><small>JOURNAL</small><strong>OCT</strong><span>2ND<br>2026</span></div>
+        <div class="about-hero__card loft-reveal" data-until="2026-11-02T00:00:00Z"><small>JOURNAL</small><strong>OCT</strong><span>2ND<br>2026</span></div><div class="about-hero__card loft-reveal" data-publish="2026-11-02T00:00:00Z"><small>JOURNAL</small><strong>NOV</strong><span>2ND<br>2026</span></div>
       </div>
     </section>
     <section class="blog-list">
+      <a class="blog-card" href="/blog/party-season-hair-booking-styling-and-winter-care/" data-publish="2026-11-02T00:00:00Z">
+        <div class="blog-card__image"><img src="/images/studio-salon-wide-1.jpg" alt="Inside The Loft Hair Studio in Bishopston, Bristol"></div>
+        <div>
+          <p class="blog-card__date">2 NOVEMBER 2026</p>
+          <h2>Party season<br><em>hair, sorted.</em></h2>
+          <p>When to book before Christmas, how to time your cut and colour, and keeping your hair healthy through winter.</p>
+          <span class="blog-card__link">READ THE NOTE <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+        </div>
+      </a>
       <a class="blog-card" href="/blog/your-autumn-hair-refresh-colours-and-styles-to-try-this-season/">
         <div class="blog-card__image"><img src="/images/20260402_182943.jpg" alt="Copper pixie cut at The Loft Hair Studio in Bristol"></div>
         <div>
@@ -274,6 +283,8 @@ body:has(#loft-blog){overflow-x:hidden}
         </div>
       </a>
     </section>
+    <style>[data-publish]{display:none!important}</style>
+    <script>(function(){var pv=/[?&]preview/.test(location.search),now=Date.now();document.querySelectorAll("[data-publish]").forEach(function(e){if(pv||now>=Date.parse(e.getAttribute("data-publish")))e.removeAttribute("data-publish")});document.querySelectorAll("[data-until]").forEach(function(e){if(pv||now>=Date.parse(e.getAttribute("data-until")))e.remove()})})();</script>
   </main>
 
     <footer class="loft-footer">
